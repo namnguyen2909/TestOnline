@@ -26,12 +26,12 @@ namespace CPanel.Modules.Admin
 
         protected void btnBack1_Click(object sender, EventArgs e)
         {
-            Response.Redirect(Commons.TitleConst.getTitleConst("MenuChon.aspx"));
+            Response.Redirect(Commons.TitleConst.getTitleConst("http://localhost:1998/HomePage"));
         }
 
         protected void btnBack2_Click(object sender, EventArgs e)
         {
-            Response.Redirect(Commons.TitleConst.getTitleConst("MenuChon.aspx"));
+            Response.Redirect(Commons.TitleConst.getTitleConst("http://localhost:1998/HomePage"));
         }
     }
 }

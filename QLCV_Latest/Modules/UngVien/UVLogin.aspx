@@ -85,8 +85,32 @@
             <asp:TextBox runat="server" ID="txt_Username" placeholder="Enter Username"></asp:TextBox>
             <label for="psw"><b>Password</b></label>
             <asp:TextBox runat="server" ID="txt_password" TextMode="Password" placeholder="Enter Password"></asp:TextBox>
-            <asp:Button runat="server" ID="btn_Login" CssClass="lgnbtn" OnClick="btn_Login_Click" Text="Login" />
-            <asp:Button runat="server" ID="btn_cancel" Text="Cancel" class="cnbtn" />
+            <asp:Button runat="server" ID="btn_Login" CssClass="lgnbtn" OnClick="btn_Login_Click" Text="Login"
+                style="
+                background-image: linear-gradient(to right, #f857a6 0%, #ff5858  51%, #f857a6  100%);
+                margin-left: 170px;
+                padding: 15px 15px;
+                text-align: center;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;            
+                box-shadow: 0 0 20px #eee;
+                border-radius: 10px;
+                display: block; "/>
+            <asp:Button runat="server" ID="btn_cancel" Text="Cancel" class="cnbtn"
+                style="
+                margin-top:20px;
+                margin-left:173px;
+                background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
+                padding: 15px 15px;
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                color: white;            
+                box-shadow: 0 0 20px #eee;
+                border-radius: 10px;
+                display: block;"/>
         </div>
     </form>
 </body>

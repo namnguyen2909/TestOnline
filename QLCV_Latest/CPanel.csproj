@@ -612,6 +612,7 @@
     </Compile>
     <Compile Include="Modules\Admin\ChonLoaiCauHoi.aspx.cs">
       <DependentUpon>ChonLoaiCauHoi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Modules\Admin\ChonLoaiCauHoi.aspx.designer.cs">
       <DependentUpon>ChonLoaiCauHoi.aspx</DependentUpon>

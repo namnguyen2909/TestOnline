@@ -15,7 +15,7 @@ namespace CPanel.Modules.QuanLyBaiThi
         }
         protected void btnBack_Click(object sender, EventArgs e)
         {
-            Response.Redirect(Commons.TitleConst.getTitleConst("MenuChon.aspx"));
+            Response.Redirect(Commons.TitleConst.getTitleConst("http://localhost:1998/HomePage"));
         }
     }
 }

@@ -16,7 +16,12 @@ namespace CPanel.Modules.Admin
 
         protected void btnSave_Click(object sender, EventArgs e)
         {
-            Response.Redirect(Commons.TitleConst.getTitleConst("MenuChon.aspx"));
+            Response.Redirect(Commons.TitleConst.getTitleConst("http://localhost:1998/HomePage"));
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(Commons.TitleConst.getTitleConst("http://localhost:1998/HomePage"));
         }
     }
 }

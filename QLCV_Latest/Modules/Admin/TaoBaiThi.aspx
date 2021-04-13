@@ -86,7 +86,7 @@
 
     
     <div class="col-xs-12">
-            <asp:Button ID="Button1" Text="Save" OnClick="btnOK_Click" 
+            <asp:Button ID="Button1" Text="Next" OnClick="btnOK_Click" 
                 CssClass="btn btn-success center_css"
                 style="margin-top:20px;
                        margin-left:885px;
