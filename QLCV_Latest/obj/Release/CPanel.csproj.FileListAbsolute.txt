@@ -1,0 +1,210 @@
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\CPanel.dll.config
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\CPanel.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\CPanel.pdb
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\DevExpress.Data.v17.2.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\DevExpress.Utils.v17.2.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\DevExpress.Web.v17.2.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\Microsoft.Windows.Design.Interaction.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\Microsoft.Windows.Design.Extensibility.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\DevExpress.Data.v17.2.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\DevExpress.Utils.v17.2.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\DevExpress.Web.v17.2.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\Microsoft.Web.Infrastructure.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\Newtonsoft.Json.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\Microsoft.Windows.Design.Interaction.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\Microsoft.Windows.Design.Extensibility.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\de\DevExpress.Data.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\es\DevExpress.Data.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\ja\DevExpress.Data.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\ru\DevExpress.Data.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\de\DevExpress.Utils.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\es\DevExpress.Utils.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\ja\DevExpress.Utils.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\ru\DevExpress.Utils.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\de\DevExpress.Web.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\es\DevExpress.Web.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\ja\DevExpress.Web.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\bin\ru\DevExpress.Web.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\obj\Release\CPanel.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_25Aug2018\obj\Release\CPanel.pdb
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\CPanel.dll.config
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\CPanel.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\CPanel.pdb
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Data.v17.2.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Utils.v17.2.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Web.v17.2.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Windows.Design.Interaction.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Windows.Design.Extensibility.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Data.v17.2.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Utils.v17.2.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Web.v17.2.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Web.Infrastructure.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\Newtonsoft.Json.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Windows.Design.Interaction.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Windows.Design.Extensibility.xml
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\de\DevExpress.Data.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\es\DevExpress.Data.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\ja\DevExpress.Data.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\ru\DevExpress.Data.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\de\DevExpress.Utils.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\es\DevExpress.Utils.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\ja\DevExpress.Utils.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\ru\DevExpress.Utils.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\de\DevExpress.Web.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\es\DevExpress.Web.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\ja\DevExpress.Web.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\ru\DevExpress.Web.v17.2.resources.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\obj\Release\CPanel.csprojResolveAssemblyReference.cache
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\obj\Release\CPanel.dll
+E:\PROJECTS\ATCL\Source code\CPanel_Fix_issue_20Fed2019\obj\Release\CPanel.pdb
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\CPanel.dll.config
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\CPanel.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\CPanel.pdb
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Data.v17.2.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Utils.v17.2.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Web.v17.2.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Windows.Design.Interaction.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Windows.Design.Extensibility.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Data.v17.2.xml
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Utils.v17.2.xml
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Web.v17.2.xml
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Web.Infrastructure.xml
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\Newtonsoft.Json.xml
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Windows.Design.Interaction.xml
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Windows.Design.Extensibility.xml
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\de\DevExpress.Data.v17.2.resources.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\es\DevExpress.Data.v17.2.resources.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\ja\DevExpress.Data.v17.2.resources.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\ru\DevExpress.Data.v17.2.resources.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\de\DevExpress.Utils.v17.2.resources.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\es\DevExpress.Utils.v17.2.resources.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\ja\DevExpress.Utils.v17.2.resources.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\ru\DevExpress.Utils.v17.2.resources.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\de\DevExpress.Web.v17.2.resources.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\es\DevExpress.Web.v17.2.resources.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\ja\DevExpress.Web.v17.2.resources.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\bin\ru\DevExpress.Web.v17.2.resources.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\obj\Release\CPanel.csprojResolveAssemblyReference.cache
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\obj\Release\CPanel.dll
+E:\8-PROJECTS\TCS_ATCL\Source code\CPanel_Fix_issue_20Fed2019\obj\Release\CPanel.pdb
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\CPanel.dll.config
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\CPanel.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\CPanel.pdb
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Data.v17.2.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Utils.v17.2.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Web.v17.2.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Windows.Design.Interaction.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Windows.Design.Extensibility.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Data.v17.2.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Utils.v17.2.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\DevExpress.Web.v17.2.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\Newtonsoft.Json.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Windows.Design.Interaction.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\Microsoft.Windows.Design.Extensibility.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\de\DevExpress.Data.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\es\DevExpress.Data.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\ja\DevExpress.Data.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\ru\DevExpress.Data.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\de\DevExpress.Utils.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\es\DevExpress.Utils.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\ja\DevExpress.Utils.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\ru\DevExpress.Utils.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\de\DevExpress.Web.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\es\DevExpress.Web.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\ja\DevExpress.Web.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\bin\ru\DevExpress.Web.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\obj\Release\CPanel.csprojResolveAssemblyReference.cache
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\obj\Release\CPanel.dll.licenses
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\obj\Release\CPanel.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_20Fed2019\obj\Release\CPanel.pdb
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\CPanel.dll.config
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\CPanel.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\CPanel.pdb
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\DevExpress.Data.v17.2.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\DevExpress.Utils.v17.2.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\DevExpress.Web.v17.2.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\Microsoft.Windows.Design.Interaction.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\Microsoft.Windows.Design.Extensibility.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\DevExpress.Data.v17.2.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\DevExpress.Utils.v17.2.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\DevExpress.Web.v17.2.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\Microsoft.Web.Infrastructure.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\Newtonsoft.Json.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\Microsoft.Windows.Design.Interaction.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\Microsoft.Windows.Design.Extensibility.xml
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\de\DevExpress.Data.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\es\DevExpress.Data.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\ja\DevExpress.Data.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\ru\DevExpress.Data.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\de\DevExpress.Utils.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\es\DevExpress.Utils.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\ja\DevExpress.Utils.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\ru\DevExpress.Utils.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\de\DevExpress.Web.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\es\DevExpress.Web.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\ja\DevExpress.Web.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\bin\ru\DevExpress.Web.v17.2.resources.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\obj\Release\CPanel.csprojResolveAssemblyReference.cache
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\obj\Release\CPanel.dll
+C:\Users\tuyendv.aits\Desktop\ATCL_TCS_25sep_2019\CPanel_Fix_issue_04Mar2019\obj\Release\CPanel.pdb
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\CPanel.dll.config
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\CPanel.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\CPanel.pdb
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\DevExpress.Data.v17.2.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\DevExpress.Utils.v17.2.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\DevExpress.Web.v17.2.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\FlexCel.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\Microsoft.Windows.Design.Interaction.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\Microsoft.Windows.Design.Extensibility.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\DevExpress.Data.v17.2.xml
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\DevExpress.Utils.v17.2.xml
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\DevExpress.Web.v17.2.xml
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\Microsoft.Web.Infrastructure.xml
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\Newtonsoft.Json.xml
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\Microsoft.Windows.Design.Interaction.xml
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\Microsoft.Windows.Design.Extensibility.xml
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\de\DevExpress.Data.v17.2.resources.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\es\DevExpress.Data.v17.2.resources.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\ja\DevExpress.Data.v17.2.resources.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\ru\DevExpress.Data.v17.2.resources.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\de\DevExpress.Utils.v17.2.resources.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\es\DevExpress.Utils.v17.2.resources.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\ja\DevExpress.Utils.v17.2.resources.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\ru\DevExpress.Utils.v17.2.resources.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\de\DevExpress.Web.v17.2.resources.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\es\DevExpress.Web.v17.2.resources.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\ja\DevExpress.Web.v17.2.resources.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\bin\ru\DevExpress.Web.v17.2.resources.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\obj\Release\CPanel.csprojResolveAssemblyReference.cache
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\obj\Release\CPanel.dll
+D:\1_PROJECTS\2018\ATCL_TCS\SOURCE_CODE\CPanel_12Mar2020\obj\Release\CPanel.pdb
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\CPanel.dll.config
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\CPanel.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\CPanel.pdb
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\DevExpress.Data.v17.2.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\DevExpress.Utils.v17.2.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\DevExpress.Web.v17.2.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\FlexCel.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\Microsoft.Windows.Design.Interaction.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\Microsoft.Windows.Design.Extensibility.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\DevExpress.Data.v17.2.xml
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\DevExpress.Utils.v17.2.xml
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\DevExpress.Web.v17.2.xml
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\Microsoft.Windows.Design.Interaction.xml
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\Microsoft.Windows.Design.Extensibility.xml
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\de\DevExpress.Data.v17.2.resources.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\es\DevExpress.Data.v17.2.resources.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\ja\DevExpress.Data.v17.2.resources.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\ru\DevExpress.Data.v17.2.resources.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\de\DevExpress.Utils.v17.2.resources.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\es\DevExpress.Utils.v17.2.resources.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\ja\DevExpress.Utils.v17.2.resources.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\ru\DevExpress.Utils.v17.2.resources.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\de\DevExpress.Web.v17.2.resources.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\es\DevExpress.Web.v17.2.resources.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\ja\DevExpress.Web.v17.2.resources.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\bin\ru\DevExpress.Web.v17.2.resources.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\obj\Release\CPanel.csprojResolveAssemblyReference.cache
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\obj\Release\CPanel.dll
+D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\obj\Release\CPanel.pdb

@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ATCLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ATCLEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TBL_BAO_CAO_CV" EntityType="ATCLModel.TBL_BAO_CAO_CV" />
+    <EntitySet Name="TBL_DANH_MUC" EntityType="ATCLModel.TBL_DANH_MUC" />
+    <EntitySet Name="TBL_DS_TAI_LIEU" EntityType="ATCLModel.TBL_DS_TAI_LIEU" />
+    <EntitySet Name="TBL_HE_THONG" EntityType="ATCLModel.TBL_HE_THONG" />
+    <EntitySet Name="TBL_HOP_DA" EntityType="ATCLModel.TBL_HOP_DA" />
+    <EntitySet Name="TBL_HOP_DONG" EntityType="ATCLModel.TBL_HOP_DONG" />
+    <EntitySet Name="TBL_MENU" EntityType="ATCLModel.TBL_MENU" />
+    <EntitySet Name="TBL_MENU_LOAI" EntityType="ATCLModel.TBL_MENU_LOAI" />
+    <EntitySet Name="TBL_MENU_QUYEN" EntityType="ATCLModel.TBL_MENU_QUYEN" />
+    <EntitySet Name="TBL_NGUOI_DUNG" EntityType="ATCLModel.TBL_NGUOI_DUNG" />
+    <EntitySet Name="TBL_NGUOI_DUNG_PHONG_BAN" EntityType="ATCLModel.TBL_NGUOI_DUNG_PHONG_BAN" />
+    <EntitySet Name="TBL_NGUOI_DUNG_QUYEN" EntityType="ATCLModel.TBL_NGUOI_DUNG_QUYEN" />
+    <EntitySet Name="TBL_NHIEM_VU" EntityType="ATCLModel.TBL_NHIEM_VU" />
+    <EntitySet Name="TBL_PHONG_BAN" EntityType="ATCLModel.TBL_PHONG_BAN" />
+    <EntitySet Name="TBL_QUYEN" EntityType="ATCLModel.TBL_QUYEN" />
+    <EntitySet Name="TBL_QUYEN_RULE" EntityType="ATCLModel.TBL_QUYEN_RULE" />
+    <EntitySet Name="TBL_RUI_RO" EntityType="ATCLModel.TBL_RUI_RO" />
+    <EntitySet Name="TBL_RULE" EntityType="ATCLModel.TBL_RULE" />
+    <EntitySet Name="TBL_THEO_DOI_CV" EntityType="ATCLModel.TBL_THEO_DOI_CV" />
+    <EntitySet Name="TBL_TIMESHEET" EntityType="ATCLModel.TBL_TIMESHEET" />
+    <AssociationSet Name="FK_BAO_CAO_CV_TIMESHEET" Association="ATCLModel.FK_BAO_CAO_CV_TIMESHEET">
+      <End Role="TBL_TIMESHEET" EntitySet="TBL_TIMESHEET" />
+      <End Role="TBL_BAO_CAO_CV" EntitySet="TBL_BAO_CAO_CV" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HOP_HE_THONG_DA" Association="ATCLModel.FK_HOP_HE_THONG_DA">
+      <End Role="TBL_HE_THONG" EntitySet="TBL_HE_THONG" />
+      <End Role="TBL_HOP_DA" EntitySet="TBL_HOP_DA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NHIEM_VU_DU_AN" Association="ATCLModel.FK_NHIEM_VU_DU_AN">
+      <End Role="TBL_HE_THONG" EntitySet="TBL_HE_THONG" />
+      <End Role="TBL_NHIEM_VU" EntitySet="TBL_NHIEM_VU" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RUI_RO_HE_THONG_DA" Association="ATCLModel.FK_RUI_RO_HE_THONG_DA">
+      <End Role="TBL_HE_THONG" EntitySet="TBL_HE_THONG" />
+      <End Role="TBL_RUI_RO" EntitySet="TBL_RUI_RO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_HE_THONG_HOP_DONG" Association="ATCLModel.FK_TBL_HE_THONG_HOP_DONG">
+      <End Role="TBL_HOP_DONG" EntitySet="TBL_HOP_DONG" />
+      <End Role="TBL_HE_THONG" EntitySet="TBL_HE_THONG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Menu_Quyen_Menu" Association="ATCLModel.FK_Menu_Quyen_Menu">
+      <End Role="TBL_MENU" EntitySet="TBL_MENU" />
+      <End Role="TBL_MENU_QUYEN" EntitySet="TBL_MENU_QUYEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Menus_Menu_Loai" Association="ATCLModel.FK_Menus_Menu_Loai">
+      <End Role="TBL_MENU_LOAI" EntitySet="TBL_MENU_LOAI" />
+      <End Role="TBL_MENU" EntitySet="TBL_MENU" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Menu_Quyen_Quyen" Association="ATCLModel.FK_Menu_Quyen_Quyen">
+      <End Role="TBL_QUYEN" EntitySet="TBL_QUYEN" />
+      <End Role="TBL_MENU_QUYEN" EntitySet="TBL_MENU_QUYEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NguoiDung_Quyen_NguoiDung" Association="ATCLModel.FK_NguoiDung_Quyen_NguoiDung">
+      <End Role="TBL_NGUOI_DUNG" EntitySet="TBL_NGUOI_DUNG" />
+      <End Role="TBL_NGUOI_DUNG_QUYEN" EntitySet="TBL_NGUOI_DUNG_QUYEN" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="TBL_BAO_CAO_CV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_LOAI_CONG_VIEC" Type="Int32" Nullable="false" />
+    <Property Name="TEN_CONG_VIEC" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MO_TA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="STT" Type="Int32" />
+    <Property Name="TT_XOA" Type="Boolean" />
+    <Property Name="ID_NGUOI_TAO" Type="Int32" />
+    <Property Name="NGAY_TAO" Type="DateTime" Precision="3" />
+    <Property Name="ID_NGUOI_SUA" Type="Int32" />
+    <Property Name="NGAY_SUA" Type="DateTime" Precision="3" />
+    <Property Name="TONG_THOI_GIAN" Type="Double" />
+    <Property Name="ID_TIMESHEET" Type="Int32" />
+    <NavigationProperty Name="TBL_TIMESHEET" Relationship="ATCLModel.FK_BAO_CAO_CV_TIMESHEET" FromRole="TBL_BAO_CAO_CV" ToRole="TBL_TIMESHEET" />
+  </EntityType>
+  <EntityType Name="TBL_DANH_MUC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MA_DANH_MUC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TEN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MO_TA" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="STT" Type="Int32" />
+    <Property Name="TT_XOA" Type="Boolean" />
+    <Property Name="ID_NGUOI_TAO" Type="Int32" />
+    <Property Name="NGAY_TAO" Type="DateTime" Precision="3" />
+    <Property Name="ID_NGUOI_SUA" Type="Int32" />
+    <Property Name="NGAY_SUA" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TBL_DS_TAI_LIEU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_HE_THONG" Type="Int32" Nullable="false" />
+    <Property Name="DAC_TA_YCKH" Type="Boolean" />
+    <Property Name="GPKT" Type="Boolean" />
+    <Property Name="TL2589" Type="Boolean" />
+    <Property Name="PTTK" Type="Boolean" />
+    <Property Name="HDSD" Type="Boolean" />
+    <Property Name="HDCDHT" Type="Boolean" />
+    <Property Name="UAT" Type="Boolean" />
+    <Property Name="CODING" Type="Boolean" />
+    <Property Name="BBNTKT" Type="Boolean" />
+    <Property Name="BBNTTT" Type="Boolean" />
+    <Property Name="BBBG_DBHD" Type="Boolean" />
+    <Property Name="HDBT" Type="Boolean" />
+    <Property Name="HDQLTD" Type="Boolean" />
+    <Property Name="TT_XOA" Type="Boolean" />
+    <Property Name="ID_NGUOI_TAO" Type="Int32" />
+    <Property Name="NGAY_TAO" Type="DateTime" Precision="3" />
+    <Property Name="ID_NGUOI_SUA" Type="Int32" />
+    <Property Name="NGAY_SUA" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TBL_HE_THONG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MA_HE_THONG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="STT" Type="Int32" />
+    <Property Name="TT_XOA" Type="Boolean" />
+    <Property Name="ID_NGUOI_TAO" Type="Int32" />
+    <Property Name="NGAY_TAO" Type="DateTime" Precision="3" />
+    <Property Name="ID_NGUOI_SUA" Type="Int32" />
+    <Property Name="NGAY_SUA" Type="DateTime" Precision="3" />
+    <Property Name="ID_HOP_DONG" Type="Int32" />
+    <Property Name="TEN" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="MO_TA" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="NGAY_KH_GUI_YC" Type="DateTime" Precision="3" />
+    <Property Name="NGAY_KH_YC_HOAN_THANH" Type="DateTime" Precision="3" />
+    <Property Name="ID_KH_KY_HD" Type="Int32" />
+    <Property Name="ID_KH_NSD" Type="Int32" />
+    <Property Name="DO_UU_TIEN" Type="Int16" />
+    <Property Name="NGAY_BAT_DAU_LAM" Type="DateTime" Precision="3" />
+    <Property Name="NGAY_NGHIEM_THU_TT" Type="DateTime" Precision="3" />
+    <Property Name="QUY" Type="Int16" />
+    <Property Name="MAN_DAY" Type="Int32" />
+    <Property Name="ID_TRANG_THAI_DA" Type="Int32" />
+    <Property Name="ID_PRODUCT_OWNER" Type="Int32" />
+    <Property Name="ID_PM" Type="Int32" />
+    <Property Name="ID_NGUOI_THUC_HIEN" Type="Int32" />
+    <Property Name="ID_NGUOI_PHOI_HOP" Type="Int32" />
+    <Property Name="ID_LOAI_TRIEN_KHAI_DA" Type="Int32" />
+    <Property Name="ID_PHAM_VI_DA" Type="Int32" />
+    <Property Name="ID_TIEN_DO" Type="Int32" />
+    <Property Name="TT_DBHD" Type="Int32" />
+    <NavigationProperty Name="TBL_HOP_DA" Relationship="ATCLModel.FK_HOP_HE_THONG_DA" FromRole="TBL_HE_THONG" ToRole="TBL_HOP_DA" />
+    <NavigationProperty Name="TBL_NHIEM_VU" Relationship="ATCLModel.FK_NHIEM_VU_DU_AN" FromRole="TBL_HE_THONG" ToRole="TBL_NHIEM_VU" />
+    <NavigationProperty Name="TBL_RUI_RO" Relationship="ATCLModel.FK_RUI_RO_HE_THONG_DA" FromRole="TBL_HE_THONG" ToRole="TBL_RUI_RO" />
+    <NavigationProperty Name="TBL_HOP_DONG" Relationship="ATCLModel.FK_TBL_HE_THONG_HOP_DONG" FromRole="TBL_HE_THONG" ToRole="TBL_HOP_DONG" />
+  </EntityType>
+  <EntityType Name="TBL_HOP_DA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_HE_THONG" Type="Int32" Nullable="false" />
+    <Property Name="NGAY_HOP" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="GIO_BAT_DAU" Type="Time" Precision="7" />
+    <Property Name="GIO_KET_THUC" Type="Time" Precision="7" />
+    <Property Name="DIA_DIEM" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ID_KIEU_HOP" Type="Int32" />
+    <Property Name="ID_HINH_THUC_HOP" Type="Int32" />
+    <Property Name="NOI_DUNG_HOP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GHI_CHU" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="URL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="STT" Type="Int32" />
+    <Property Name="TT_XOA" Type="Boolean" />
+    <Property Name="ID_NGUOI_TAO" Type="Int32" />
+    <Property Name="NGAY_TAO" Type="DateTime" Precision="3" />
+    <Property Name="ID_NGUOI_SUA" Type="Int32" />
+    <Property Name="NGAY_SUA" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TBL_HE_THONG" Relationship="ATCLModel.FK_HOP_HE_THONG_DA" FromRole="TBL_HOP_DA" ToRole="TBL_HE_THONG" />
+  </EntityType>
+  <EntityType Name="TBL_HOP_DONG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MA_HOP_DONG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SO_HOP_DONG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TEN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MO_TA" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="STT" Type="Int32" />
+    <Property Name="TT_XOA" Type="Boolean" />
+    <Property Name="ID_NGUOI_TAO" Type="Int32" />
+    <Property Name="NGAY_TAO" Type="DateTime" Precision="3" />
+    <Property Name="ID_NGUOI_SUA" Type="Int32" />
+    <Property Name="NGAY_SUA" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TBL_HE_THONG" Relationship="ATCLModel.FK_TBL_HE_THONG_HOP_DONG" FromRole="TBL_HOP_DONG" ToRole="TBL_HE_THONG" />
+  </EntityType>
+  <EntityType Name="TBL_MENU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_LOAI_MENU" Type="Int32" Nullable="false" />
+    <Property Name="TEN" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TEN_URL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="LINK" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="isEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="ID_CHA" Type="Int32" Nullable="false" />
+    <Property Name="STT" Type="Int32" Nullable="false" />
+    <Property Name="ID_NGON_NGU" Type="Int32" />
+    <NavigationProperty Name="TBL_MENU_QUYEN" Relationship="ATCLModel.FK_Menu_Quyen_Menu" FromRole="TBL_MENU" ToRole="TBL_MENU_QUYEN" />
+    <NavigationProperty Name="TBL_MENU_LOAI" Relationship="ATCLModel.FK_Menus_Menu_Loai" FromRole="TBL_MENU" ToRole="TBL_MENU_LOAI" />
+  </EntityType>
+  <EntityType Name="TBL_MENU_LOAI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TIEU_DE" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MO_TA" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TBL_MENU" Relationship="ATCLModel.FK_Menus_Menu_Loai" FromRole="TBL_MENU_LOAI" ToRole="TBL_MENU" />
+  </EntityType>
+  <EntityType Name="TBL_MENU_QUYEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_QUYEN" Type="Int32" Nullable="false" />
+    <Property Name="ID_MENU" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TBL_MENU" Relationship="ATCLModel.FK_Menu_Quyen_Menu" FromRole="TBL_MENU_QUYEN" ToRole="TBL_MENU" />
+    <NavigationProperty Name="TBL_QUYEN" Relationship="ATCLModel.FK_Menu_Quyen_Quyen" FromRole="TBL_MENU_QUYEN" ToRole="TBL_QUYEN" />
+  </EntityType>
+  <EntityType Name="TBL_NGUOI_DUNG">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="isAdmin" Type="Boolean" />
+    <Property Name="isEnabled" Type="Boolean" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tel" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TBL_NGUOI_DUNG_QUYEN" Relationship="ATCLModel.FK_NguoiDung_Quyen_NguoiDung" FromRole="TBL_NGUOI_DUNG" ToRole="TBL_NGUOI_DUNG_QUYEN" />
+  </EntityType>
+  <EntityType Name="TBL_NGUOI_DUNG_PHONG_BAN">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="DepartmentID" Type="Int32" />
+    <Property Name="isLeader" Type="Boolean" />
+    <Property Name="isDeleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TBL_NGUOI_DUNG_QUYEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_NGUOI_DUNG" Type="Int32" Nullable="false" />
+    <Property Name="ID_QUYEN" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TBL_NGUOI_DUNG" Relationship="ATCLModel.FK_NguoiDung_Quyen_NguoiDung" FromRole="TBL_NGUOI_DUNG_QUYEN" ToRole="TBL_NGUOI_DUNG" />
+  </EntityType>
+  <EntityType Name="TBL_NHIEM_VU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_CHA" Type="Int32" />
+    <Property Name="ID_HE_THONG_DA" Type="Int32" />
+    <Property Name="ID_CHANGE_REQUEST" Type="Int32" />
+    <Property Name="TEN_NHIEM_VU" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID_NGUOI_CHU_TRI" Type="Int32" />
+    <Property Name="ID_NGUOI_PHOI_HOP" Type="Int32" />
+    <Property Name="NGAY_BAT_DAU_DK" Type="DateTime" Precision="0" />
+    <Property Name="NGAY_KET_THUC_DK" Type="DateTime" Precision="0" />
+    <Property Name="SO_NGAY_DK" Type="Int32" />
+    <Property Name="NGAY_BAT_DAU_TT" Type="DateTime" Precision="0" />
+    <Property Name="NGAY_KET_THUC_TT" Type="DateTime" Precision="0" />
+    <Property Name="SO_NGAY_TT" Type="Int32" />
+    <Property Name="ID_KET_QUA" Type="Int32" />
+    <Property Name="PHAN_TRAM_KET_QUA" Type="Int32" />
+    <Property Name="GHI_CHU" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TT_XOA" Type="Boolean" />
+    <Property Name="ID_NGUOI_TAO" Type="Int32" />
+    <Property Name="NGAY_TAO" Type="DateTime" Precision="3" />
+    <Property Name="ID_NGUOI_SUA" Type="Int32" />
+    <Property Name="NGAY_SUA" Type="DateTime" Precision="3" />
+    <Property Name="STT" Type="Int32" />
+    <Property Name="SPRINT" Type="Int32" />
+    <NavigationProperty Name="TBL_HE_THONG" Relationship="ATCLModel.FK_NHIEM_VU_DU_AN" FromRole="TBL_NHIEM_VU" ToRole="TBL_HE_THONG" />
+  </EntityType>
+  <EntityType Name="TBL_PHONG_BAN">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="isDefault" Type="Boolean" />
+    <Property Name="isDeleted" Type="Boolean" />
+    <Property Name="isVisible" Type="Boolean" />
+    <Property Name="IdParent" Type="Int32" />
+    <Property Name="DepartmentCode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_QUYEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="NAME" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ID_PARENT" Type="Int32" />
+    <NavigationProperty Name="TBL_MENU_QUYEN" Relationship="ATCLModel.FK_Menu_Quyen_Quyen" FromRole="TBL_QUYEN" ToRole="TBL_MENU_QUYEN" />
+  </EntityType>
+  <EntityType Name="TBL_QUYEN_RULE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_QUYEN" Type="Int32" Nullable="false" />
+    <Property Name="ID_RULE" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBL_RUI_RO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_HE_THONG" Type="Int32" Nullable="false" />
+    <Property Name="MA_RUI_RO" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NOI_DUNG" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="MO_TA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GIAI_PHAP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KIEN_NGHI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GHI_CHU" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID_MUC_UU_TIEN" Type="Int32" />
+    <Property Name="ID_KET_QUA" Type="Int32" />
+    <Property Name="ID_NGUOI_CHU_TRI" Type="Int32" />
+    <Property Name="STT" Type="Int32" />
+    <Property Name="TT_XOA" Type="Boolean" />
+    <Property Name="ID_NGUOI_TAO" Type="Int32" />
+    <Property Name="NGAY_TAO" Type="DateTime" Precision="3" />
+    <Property Name="ID_NGUOI_SUA" Type="Int32" />
+    <Property Name="NGAY_SUA" Type="DateTime" Precision="3" />
+    <Property Name="NGAY_BAT_DAU" Type="DateTime" Precision="3" />
+    <Property Name="NGAY_KET_THUC" Type="DateTime" Precision="3" />
+    <Property Name="NGAY_PHAT_SINH" Type="DateTime" Precision="3" />
+    <Property Name="TT_TRACH_NHIEM_KH" Type="Boolean" />
+    <Property Name="TT_TRACH_NHIEM_AITS" Type="Boolean" />
+    <Property Name="TT_TRACH_NHIEM_DT" Type="Boolean" />
+    <NavigationProperty Name="TBL_HE_THONG" Relationship="ATCLModel.FK_RUI_RO_HE_THONG_DA" FromRole="TBL_RUI_RO" ToRole="TBL_HE_THONG" />
+  </EntityType>
+  <EntityType Name="TBL_RULE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="NAME" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CODE" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="isEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="ID_PARENT" Type="Int32" Nullable="false" />
+    <Property Name="ORDER" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBL_THEO_DOI_CV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TEN_CONG_VIEC" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ID_HE_THONG" Type="Int32" />
+    <Property Name="ID_HOP_DONG" Type="Int32" />
+    <Property Name="ID_NGUOI_CHU_TRI" Type="Int32" />
+    <Property Name="ID_NGUOI_PHOI_HOP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NGAY_BAT_DAU" Type="DateTime" Precision="0" />
+    <Property Name="NGAY_KET_THUC" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ID_KET_QUA_CV" Type="Int32" />
+    <Property Name="GHI_CHU" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TT_XOA" Type="Boolean" />
+    <Property Name="ID_NGUOI_TAO" Type="Int32" />
+    <Property Name="NGAY_TAO" Type="DateTime" Precision="3" />
+    <Property Name="ID_NGUOI_SUA" Type="Int32" />
+    <Property Name="NGAY_SUA" Type="DateTime" Precision="3" />
+    <Property Name="ID_MUC_DO_CV" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBL_TIMESHEET">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KHO_KHAN_KIEN_NGHI" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SANG_KIEN" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="TONG_THOI_GIAN" Type="Double" />
+    <Property Name="NGAY_BAO_CAO" Type="DateTime" Precision="3" />
+    <Property Name="STT" Type="Int32" />
+    <Property Name="TT_XOA" Type="Boolean" />
+    <Property Name="ID_NGUOI_TAO" Type="Int32" />
+    <Property Name="NGAY_TAO" Type="DateTime" Precision="3" />
+    <Property Name="ID_NGUOI_SUA" Type="Int32" />
+    <Property Name="NGAY_SUA" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TBL_BAO_CAO_CV" Relationship="ATCLModel.FK_BAO_CAO_CV_TIMESHEET" FromRole="TBL_TIMESHEET" ToRole="TBL_BAO_CAO_CV" />
+  </EntityType>
+  <Association Name="FK_BAO_CAO_CV_TIMESHEET">
+    <End Type="ATCLModel.TBL_TIMESHEET" Role="TBL_TIMESHEET" Multiplicity="0..1" />
+    <End Type="ATCLModel.TBL_BAO_CAO_CV" Role="TBL_BAO_CAO_CV" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_TIMESHEET">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_BAO_CAO_CV">
+        <PropertyRef Name="ID_TIMESHEET" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HOP_HE_THONG_DA">
+    <End Type="ATCLModel.TBL_HE_THONG" Role="TBL_HE_THONG" Multiplicity="1" />
+    <End Type="ATCLModel.TBL_HOP_DA" Role="TBL_HOP_DA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_HE_THONG">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_HOP_DA">
+        <PropertyRef Name="ID_HE_THONG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NHIEM_VU_DU_AN">
+    <End Type="ATCLModel.TBL_HE_THONG" Role="TBL_HE_THONG" Multiplicity="0..1" />
+    <End Type="ATCLModel.TBL_NHIEM_VU" Role="TBL_NHIEM_VU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_HE_THONG">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_NHIEM_VU">
+        <PropertyRef Name="ID_HE_THONG_DA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RUI_RO_HE_THONG_DA">
+    <End Type="ATCLModel.TBL_HE_THONG" Role="TBL_HE_THONG" Multiplicity="1" />
+    <End Type="ATCLModel.TBL_RUI_RO" Role="TBL_RUI_RO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_HE_THONG">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_RUI_RO">
+        <PropertyRef Name="ID_HE_THONG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_HE_THONG_HOP_DONG">
+    <End Type="ATCLModel.TBL_HOP_DONG" Role="TBL_HOP_DONG" Multiplicity="0..1" />
+    <End Type="ATCLModel.TBL_HE_THONG" Role="TBL_HE_THONG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_HOP_DONG">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_HE_THONG">
+        <PropertyRef Name="ID_HOP_DONG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Menu_Quyen_Menu">
+    <End Type="ATCLModel.TBL_MENU" Role="TBL_MENU" Multiplicity="1" />
+    <End Type="ATCLModel.TBL_MENU_QUYEN" Role="TBL_MENU_QUYEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_MENU">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_MENU_QUYEN">
+        <PropertyRef Name="ID_MENU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Menus_Menu_Loai">
+    <End Type="ATCLModel.TBL_MENU_LOAI" Role="TBL_MENU_LOAI" Multiplicity="1" />
+    <End Type="ATCLModel.TBL_MENU" Role="TBL_MENU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_MENU_LOAI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_MENU">
+        <PropertyRef Name="ID_LOAI_MENU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Menu_Quyen_Quyen">
+    <End Type="ATCLModel.TBL_QUYEN" Role="TBL_QUYEN" Multiplicity="1" />
+    <End Type="ATCLModel.TBL_MENU_QUYEN" Role="TBL_MENU_QUYEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_QUYEN">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBL_MENU_QUYEN">
+        <PropertyRef Name="ID_QUYEN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NguoiDung_Quyen_NguoiDung">
+    <End Type="ATCLModel.TBL_NGUOI_DUNG" Role="TBL_NGUOI_DUNG" Multiplicity="1" />
+    <End Type="ATCLModel.TBL_NGUOI_DUNG_QUYEN" Role="TBL_NGUOI_DUNG_QUYEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_NGUOI_DUNG">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TBL_NGUOI_DUNG_QUYEN">
+        <PropertyRef Name="ID_NGUOI_DUNG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
