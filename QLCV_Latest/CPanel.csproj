@@ -268,7 +268,6 @@
     <Content Include="Modules\Admin\ChonBaiThi.aspx" />
     <Content Include="Modules\Admin\ChonLoaiCauHoi.aspx" />
     <Content Include="Modules\Admin\DsUvDaThi.aspx" />
-    <Content Include="Modules\Admin\MenuChon.aspx" />
     <Content Include="Modules\Admin\TaoBaiThi.aspx" />
     <Content Include="Modules\Admin\TaoDeBai.aspx" />
     <Content Include="Modules\Admin\ThemUngVien.aspx" />
@@ -623,13 +622,6 @@
     </Compile>
     <Compile Include="Modules\Admin\DsUvDaThi.aspx.designer.cs">
       <DependentUpon>DsUvDaThi.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Admin\MenuChon.aspx.cs">
-      <DependentUpon>MenuChon.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Modules\Admin\MenuChon.aspx.designer.cs">
-      <DependentUpon>MenuChon.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modules\Admin\TaoBaiThi.aspx.cs">
       <DependentUpon>TaoBaiThi.aspx</DependentUpon>
