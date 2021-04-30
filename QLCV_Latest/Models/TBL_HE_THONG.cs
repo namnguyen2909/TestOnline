@@ -14,6 +14,7 @@ namespace CPanel.Models
     
     public partial class TBL_HE_THONG
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TBL_HE_THONG()
         {
             this.TBL_HOP_DA = new HashSet<TBL_HOP_DA>();
@@ -50,9 +51,13 @@ namespace CPanel.Models
         public Nullable<int> ID_PHAM_VI_DA { get; set; }
         public Nullable<int> ID_TIEN_DO { get; set; }
         public Nullable<int> TT_DBHD { get; set; }
+        public Nullable<int> ID_THU_KY_DA { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBL_HOP_DA> TBL_HOP_DA { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBL_NHIEM_VU> TBL_NHIEM_VU { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBL_RUI_RO> TBL_RUI_RO { get; set; }
         public virtual TBL_HOP_DONG TBL_HOP_DONG { get; set; }
     }

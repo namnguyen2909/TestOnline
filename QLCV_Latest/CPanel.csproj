@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CPanel</RootNamespace>
     <AssemblyName>CPanel</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -21,6 +21,7 @@
     <IISExpressUseClassicPipelineMode />
     <Use64BitIISExpress />
     <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,56 +44,62 @@
     <Reference Include="AjaxControlToolkit">
       <HintPath>..\..\CPanel\StandardLib_WebForm\bin\AjaxControlToolkit.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v17.2">
+    <Reference Include="DevExpress.Data.v20.1">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Web.ASPxGauges.v17.2">
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v17.2">
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v17.2.resources">
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxPivotGrid.v17.2">
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxRichEdit.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.ASPxScheduler.v17.2">
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxScheduler.v17.2.Design">
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxScheduler.v17.2.resources">
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxSpellChecker.v17.2">
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxSpellChecker.v17.2.resources">
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxThemes.v17.2">
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxTreeList.v17.2">
-    </Reference>
-    <Reference Include="DevExpress.Web.ASPxTreeList.v17.2.resources">
-    </Reference>
-    <Reference Include="DevExpress.Office.v17.2.Core">
-    </Reference>
-    <Reference Include="DevExpress.RichEdit.v17.2.Core">
-    </Reference>
-    <Reference Include="DevExpress.Web.v17.2">
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Charts.v17.2.Core">
+    <Reference Include="DevExpress.Web.ASPxGauges.v20.1">
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v17.2">
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v20.1">
     </Reference>
-    <Reference Include="DevExpress.Web.Resources.v17.2">
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v20.1.resources">
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v17.2.Web">
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v20.1">
     </Reference>
-    <Reference Include="DevExpress.XtraEditors.v17.2.Design">
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxRichEdit.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxScheduler.v20.1">
     </Reference>
-    <Reference Include="DevExpress.XtraScheduler.v17.2.Core">
+    <Reference Include="DevExpress.Web.ASPxScheduler.v20.1.Design">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v20.1.resources">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v20.1.resources">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGantt.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v20.1.resources">
+    </Reference>
+    <Reference Include="DevExpress.Office.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.Web.v20.1">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v20.1.Core">
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.Web.Resources.v20.1">
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1.Web">
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.1.Design">
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v20.1.Core">
     </Reference>
     <Reference Include="FlexCel">
       <HintPath>..\..\..\..\0-SVN (Aug 2017)\Retro SKT\SourceCode\0_Retro_SKT_Latest_2017 (TuyenDV)\Retro_Web_DEV17\bin\FlexCel.dll</HintPath>
@@ -265,10 +272,22 @@
     <Content Include="CheckPermission.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="Main.master" />
+    <Content Include="Models\Model_SQL.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_SQL.edmx</DependentUpon>
+      <LastGenOutput>Model_SQL.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model_SQL.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_SQL.edmx</DependentUpon>
+      <LastGenOutput>Model_SQL.cs</LastGenOutput>
+    </Content>
     <Content Include="Modules\Admin\ChonBaiThi.aspx" />
     <Content Include="Modules\Admin\ChonLoaiCauHoi.aspx" />
     <Content Include="Modules\Admin\DsUvDaThi.aspx" />
     <Content Include="Modules\Admin\TaoBaiThi.aspx" />
+    <Content Include="Modules\Admin\TaoCauHoiTL.aspx" />
+    <Content Include="Modules\Admin\TaoCauHoiTN.aspx" />
     <Content Include="Modules\Admin\TaoDeBai.aspx" />
     <Content Include="Modules\Admin\ThemUngVien.aspx" />
     <Content Include="Modules\Admin\XemUngVien.aspx" />
@@ -374,6 +393,7 @@
     <Content Include="Templates\images\RedWineHeader.jpg" />
     <Content Include="Templates\images\search-icon.png" />
     <Content Include="Templates\images\slideshow1.jpg" />
+    <Content Include="Templates\images\tick.png" />
     <Content Include="Templates\js\accounting.js" />
     <Content Include="Templates\js\accounting.min.js" />
     <Content Include="Templates\js\activatables.js" />
@@ -474,9 +494,7 @@
     <Compile Include="Commons\CheckUserInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Commons\CommonsConst.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Commons\CommonsConst.cs" />
     <Compile Include="Commons\CommonsFuncs.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -518,6 +536,33 @@
     <Compile Include="Main.master.designer.cs">
       <DependentUpon>Main.master</DependentUpon>
     </Compile>
+    <Compile Include="Models\BAI_THI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BAI_THI_CAU_HOI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BAI_THI_UNG_VIEN.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CAU_HINH_BAI_THI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CAU_HOI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CAU_HOI_MUC_DO.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CHU_DE_BAI_THI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DAP_AN.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LOAI_CAU_HOI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Model_SQL.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -532,6 +577,15 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model_SQL.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUC_DO_BAI_THI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUC_DO_CAU_HOI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NGUOI_DANH_GIA.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TBL_BAO_CAO_CV.cs">
       <DependentUpon>Model_SQL.tt</DependentUpon>
@@ -593,6 +647,11 @@
     <Compile Include="Models\TBL_TIMESHEET.cs">
       <DependentUpon>Model_SQL.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\UNG_VIEN.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Views\CAU_HOI_MUC_DO_VIEW.cs" />
+    <Compile Include="Models\Views\CAU_HOI_VIEW.cs" />
     <Compile Include="Models\Views\TBL_BAO_CAO_CV_VIEW.cs" />
     <Compile Include="Models\Views\TBL_HE_THONG_VIEW.cs" />
     <Compile Include="Models\Views\TBL_HOP_DA_VIEW.cs" />
@@ -602,6 +661,7 @@
     <Compile Include="Models\Views\TBL_THEO_DOI_CV_VIEW.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\Views\UNG_VIEN_VIEW.cs" />
     <Compile Include="Modules\Admin\ChonBaiThi.aspx.cs">
       <DependentUpon>ChonBaiThi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -625,14 +685,26 @@
     </Compile>
     <Compile Include="Modules\Admin\TaoBaiThi.aspx.cs">
       <DependentUpon>TaoBaiThi.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Modules\Admin\TaoBaiThi.aspx.designer.cs">
       <DependentUpon>TaoBaiThi.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Admin\TaoCauHoiTL.aspx.cs">
+      <DependentUpon>TaoCauHoiTL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\TaoCauHoiTL.aspx.designer.cs">
+      <DependentUpon>TaoCauHoiTL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Admin\TaoCauHoiTN.aspx.cs">
+      <DependentUpon>TaoCauHoiTN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\TaoCauHoiTN.aspx.designer.cs">
+      <DependentUpon>TaoCauHoiTN.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Admin\TaoDeBai.aspx.cs">
       <DependentUpon>TaoDeBai.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Modules\Admin\TaoDeBai.aspx.designer.cs">
       <DependentUpon>TaoDeBai.aspx</DependentUpon>
@@ -646,7 +718,6 @@
     </Compile>
     <Compile Include="Modules\Admin\XemUngVien.aspx.cs">
       <DependentUpon>XemUngVien.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Modules\Admin\XemUngVien.aspx.designer.cs">
       <DependentUpon>XemUngVien.aspx</DependentUpon>
@@ -886,19 +957,10 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model_SQL.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\Model_SQL.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model_SQL.edmx</DependentUpon>
-      <LastGenOutput>Model_SQL.Context.cs</LastGenOutput>
-    </Content>
     <Content Include="Models\Model_SQL.edmx.diagram">
       <DependentUpon>Model_SQL.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\Model_SQL.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model_SQL.edmx</DependentUpon>
-      <LastGenOutput>Model_SQL.cs</LastGenOutput>
-    </Content>
+    <Content Include="ExcelFile\Book2.xlsx" />
     <None Include="Properties\PublishProfiles\CPanel.pubxml" />
   </ItemGroup>
   <PropertyGroup>

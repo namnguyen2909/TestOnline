@@ -14,6 +14,7 @@ namespace CPanel.Models
     
     public partial class TBL_QUYEN
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TBL_QUYEN()
         {
             this.TBL_MENU_QUYEN = new HashSet<TBL_MENU_QUYEN>();
@@ -25,6 +26,7 @@ namespace CPanel.Models
         public string CODE { get; set; }
         public Nullable<int> ID_PARENT { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBL_MENU_QUYEN> TBL_MENU_QUYEN { get; set; }
     }
 }

@@ -14,6 +14,7 @@ namespace CPanel.Models
     
     public partial class TBL_TIMESHEET
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TBL_TIMESHEET()
         {
             this.TBL_BAO_CAO_CV = new HashSet<TBL_BAO_CAO_CV>();
@@ -30,7 +31,9 @@ namespace CPanel.Models
         public Nullable<System.DateTime> NGAY_TAO { get; set; }
         public Nullable<int> ID_NGUOI_SUA { get; set; }
         public Nullable<System.DateTime> NGAY_SUA { get; set; }
+        public string GHI_CHU { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBL_BAO_CAO_CV> TBL_BAO_CAO_CV { get; set; }
     }
 }

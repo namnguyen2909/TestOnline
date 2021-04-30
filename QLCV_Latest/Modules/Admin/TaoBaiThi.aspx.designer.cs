@@ -33,6 +33,69 @@ namespace CPanel.Modules.QuanLyBaiThi
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
+        /// txtSoLuongCauHoiDeTN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSoLuongCauHoiDeTN;
+
+        /// <summary>
+        /// txtSoLuongCauHoiDeTL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSoLuongCauHoiDeTL;
+
+        /// <summary>
+        /// txtSoLuongCauHoiTrungBinhTN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSoLuongCauHoiTrungBinhTN;
+
+        /// <summary>
+        /// txtSoLuongCauHoiTrungBinhTL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSoLuongCauHoiTrungBinhTL;
+
+        /// <summary>
+        /// txtSoLuongCauHoiKhoTN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSoLuongCauHoiKhoTN;
+
+        /// <summary>
+        /// txtSoLuongCauHoiKhoTL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSoLuongCauHoiKhoTL;
+
+        /// <summary>
+        /// txtThoiGianThi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtThoiGianThi;
+
+        /// <summary>
         /// Button1 control.
         /// </summary>
         /// <remarks>

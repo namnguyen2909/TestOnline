@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="col-xs-6 text-center">
-        <label id="loaibaithi">Loại bài thi</label>
+        <label id="loaibaithi">Chủ đề bài thi</label>
    </div>
 
     <div class="col-xs-6 text-center">
@@ -38,13 +38,13 @@
            <label>Số câu hỏi dễ:</label>
        </div>
        <div class="col-xs-3"id="txt_socauhoide1">
-           <asp:TextBox runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
+           <asp:TextBox ID="txtSoLuongCauHoiDeTN" runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
        </div>
        <div class="col-xs-3" id="socauhoide2">
            <label>Số câu hỏi dễ:</label>
        </div> 
        <div class="col-xs-3"id="txt_socauhoide2">
-            <asp:TextBox runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
+            <asp:TextBox ID="txtSoLuongCauHoiDeTL" runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
         </div>
    </div>
 
@@ -53,13 +53,13 @@
            <label>Số câu hỏi trung bình: </label>
        </div>
         <div class="col-xs-3" id="txt_socauhoibthg1">
-             <asp:TextBox runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
+             <asp:TextBox ID="txtSoLuongCauHoiTrungBinhTN" runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
         </div>
         <div class="col-xs-3" id="socauhoibthg2">
            <label>Số câu hỏi trung bình: </label>
            </div>
          <div class="col-xs-3"id="txt_socauhoibthg2" >
-             <asp:TextBox runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
+             <asp:TextBox ID="txtSoLuongCauHoiTrungBinhTL" runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
         </div>
    </div>
 
@@ -68,20 +68,20 @@
            <label>Số câu hỏi khó: </label>
        </div>
         <div class="col-xs-3" id="txt_socauhoikho1">
-             <asp:TextBox runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
+             <asp:TextBox ID="txtSoLuongCauHoiKhoTN" runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
         </div>
         <div class="col-xs-3" id="socauhoikho2">
            <label>Số câu hỏi khó: </label>
            </div>
          <div class="col-xs-3"id="txt_socauhoikho2" >
-             <asp:TextBox runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
+             <asp:TextBox ID="txtSoLuongCauHoiKhoTL" runat="server" CssClass="form-control element_tab_css" Width="150px" placeholder ="Nhập số lượng"></asp:TextBox>
         </div>
    </div>
 
     <div class="col-xs-12 text-center" id="thoigianthi">
         <label id="tgthi">Thời gian thi:</label>
-        <asp:TextBox runat="server" CssClass="form-control element_tab_css" style="width:80px;margin-left:896px;margin-top:10px"></asp:TextBox>
-        <label id="phut">phút</label>
+        <asp:TextBox ID="txtThoiGianThi" runat="server" CssClass="form-control element_tab_css" style="width:80px;margin-left:896px;margin-top:10px"></asp:TextBox>
+        <label id="dinhdang" style="font-size:16px;color:red;text-align:center">(Định dạng: hh:mm::ss)</label>
     </div>
 
     

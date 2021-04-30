@@ -3,13 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="col-xs-12">
         <div class="col-xs-6 text-center">
-            <label style="font-size:16px">Loại bài thi: </label>
-            <asp:Label ID="lblLoaiBT" runat="server"></asp:Label>
+            <label style="font-size:16px">Chủ đề bài thi: </label>
+            <asp:Label ID="lblLoaiBT" style ="font-size:16px;font-weight:bold" runat="server"></asp:Label>
         </div>
 
         <div class="col-xs-6 text-center">
             <label style="font-size:16px">Mức độ:</label>
-            <asp:Label ID="lblMucDo" runat="server"></asp:Label>
+            <asp:Label ID="lblMucDo"  style ="font-size:16px;font-weight:bold" runat="server"></asp:Label>
         </div>
     </div>
 
@@ -117,7 +117,7 @@
             
          <div class="col-xs-12">
             <asp:Button ID="Button1" Text="Save"
-                OnClick="Button1_Click"
+               
                 CssClass="btn btn-success center_css"
                 style="margin-top:20px;
                        margin-left:885px;

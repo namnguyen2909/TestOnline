@@ -1,5 +1,182 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="ATCLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="ATCLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BAI_THI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_CHU_DE_BAI_THI" Type="int" />
+    <Property Name="ID_MUC_DO_BAI_THI" Type="int" />
+    <Property Name="NGAY_TAO" Type="datetime" />
+    <Property Name="ID_NGUOI_TAO" Type="int" />
+    <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="ID_NGUOI_SUA" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_LOAI_CAU_HOI" Type="int" />
+    <Property Name="TT_XOA" Type="bit" />
+    <Property Name="THOI_GIAN" Type="time" Precision="7" />
+  </EntityType>
+  <EntityType Name="BAI_THI_CAU_HOI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_CAU_HOI" Type="int" />
+    <Property Name="ID_BAI_THI" Type="int" />
+    <Property Name="ID_DAP_AN" Type="int" />
+    <Property Name="TRANG_THAI_GUI_MAIL" Type="bit" />
+    <Property Name="NGAY_TAO" Type="datetime" />
+    <Property Name="ID_NGUOI_TAO" Type="int" />
+    <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="ID_NGUOI_SUA" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TT_XOA" Type="bit" />
+  </EntityType>
+  <EntityType Name="BAI_THI_UNG_VIEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID_UNG_VIEN" Type="int" />
+    <Property Name="ID_BAI_THI" Type="int" />
+    <Property Name="ID_NGUOI_DANH_GIA" Type="int" />
+    <Property Name="SO_DIEN_THOAI" Type="nvarchar" MaxLength="50" />
+    <Property Name="NGAY_SINH" Type="date" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="50" />
+    <Property Name="VI_TRI_TUYEN_DUNG" Type="nvarchar" MaxLength="50" />
+    <Property Name="KET_QUA_DANH_GIA" Type="nvarchar" MaxLength="50" />
+    <Property Name="NOI_DUNG_DANH_GIA" Type="nvarchar" MaxLength="200" />
+    <Property Name="TRANG_THAI_GUI_MAIL" Type="bit" />
+    <Property Name="NGAY_GUI_MAIL" Type="datetime" />
+    <Property Name="NGAY_HOAN_THANH_BAI_THI" Type="datetime" />
+    <Property Name="NGAY_TAO" Type="datetime" />
+    <Property Name="ID_NGUOI_TAO" Type="int" />
+    <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="ID_NGUOI_SUA" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TT_XOA" Type="bit" />
+  </EntityType>
+  <EntityType Name="CAU_HINH_BAI_THI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_BAI_THI" Type="int" />
+    <Property Name="ID_LOAI_CAU_HOI" Type="int" />
+    <Property Name="SO_LUONG_CAU_DE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SO_LUONG_CAU_TB" Type="nvarchar" MaxLength="50" />
+    <Property Name="SO_LUONG_CAU_KHO" Type="nvarchar" MaxLength="50" />
+    <Property Name="NGAY_TAO" Type="datetime" />
+    <Property Name="ID_NGUOI_TAO" Type="int" />
+    <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="ID_NGUOI_SUA" Type="int" />
+    <Property Name="TT_XOA" Type="bit" />
+  </EntityType>
+  <EntityType Name="CAU_HOI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="NOI_DUNG_CAU_HOI" Type="nvarchar" MaxLength="50" />
+    <Property Name="ID_LOAI_CAU_HOI" Type="int" />
+    <Property Name="ID_BAI_THI" Type="int" />
+    <Property Name="ID_CHU_DE_BAI_THI" Type="int" />
+    <Property Name="NGAY_TAO" Type="datetime" />
+    <Property Name="ID_NGUOI_TAO" Type="int" />
+    <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="ID_NGUOI_SUA" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TT_XOA" Type="bit" />
+  </EntityType>
+  <EntityType Name="CAU_HOI_MUC_DO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_CAU_HOI" Type="int" />
+    <Property Name="ID_MUC_DO_CAU_HOI" Type="int" />
+    <Property Name="NGAY_TAO" Type="datetime" />
+    <Property Name="ID_NGUOI_TAO" Type="int" />
+    <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="ID_NGUOI_SUA" Type="int" />
+    <Property Name="TT_XOA" Type="bit" />
+  </EntityType>
+  <EntityType Name="CHU_DE_BAI_THI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="TEN_CHU_DE" Type="nvarchar" MaxLength="50" />
+    <Property Name="NGAY_TAO" Type="datetime" />
+    <Property Name="ID_NGUOI_TAO" Type="int" />
+    <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="ID_NGUOI_SUA" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MA_CHU_DE" Type="nchar" MaxLength="10" />
+    <Property Name="TT_XOA" Type="bit" />
+  </EntityType>
+  <EntityType Name="DAP_AN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="NOI_DUNG_DAP_AN" Type="nvarchar" MaxLength="50" />
+    <Property Name="TRANG_THAI" Type="bit" />
+    <Property Name="ID_CAU_HOI" Type="int" />
+    <Property Name="NGAY_TAO" Type="datetime" />
+    <Property Name="ID_NGUOI_TAO" Type="int" />
+    <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="ID_NGUOI_SUA" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TT_XOA" Type="bit" />
+  </EntityType>
+  <EntityType Name="LOAI_CAU_HOI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="MA_LOAI_CAU_HOI" Type="nchar" MaxLength="10" />
+    <Property Name="MO_TA" Type="nvarchar" MaxLength="50" />
+    <Property Name="NGAY_TAO" Type="datetime" />
+    <Property Name="ID_NGUOI_TAO" Type="int" />
+    <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="ID_NGUOI_SUA" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TT_XOA" Type="bit" />
+  </EntityType>
+  <EntityType Name="MUC_DO_BAI_THI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="TEN_MUC_DO" Type="nvarchar" MaxLength="50" />
+    <Property Name="NGAY_TAO" Type="datetime" />
+    <Property Name="ID_NGUOI_TAO" Type="int" />
+    <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="ID_NGUOI_SUA" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MA_MUC_DO" Type="nchar" MaxLength="10" />
+    <Property Name="TT_XOA" Type="bit" />
+  </EntityType>
+  <EntityType Name="MUC_DO_CAU_HOI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="MA_MUC_DO" Type="nchar" MaxLength="10" />
+    <Property Name="MO_TA" Type="nvarchar" MaxLength="50" />
+    <Property Name="NGAY_TAO" Type="datetime" />
+    <Property Name="ID_NGUOI_TAO" Type="int" />
+    <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="ID_NGUOI_SUA" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TT_XOA" Type="bit" />
+  </EntityType>
+  <EntityType Name="NGUOI_DANH_GIA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="HO_TEN" Type="nvarchar" MaxLength="50" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="50" />
+    <Property Name="CHUC_VU" Type="nvarchar" MaxLength="50" />
+    <Property Name="NGAY_TAO" Type="datetime" />
+    <Property Name="ID_NGUOI_TAO" Type="int" />
+    <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="ID_NGUOI_SUA" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TT_XOA" Type="bit" />
+  </EntityType>
   <EntityType Name="TBL_BAO_CAO_CV">
     <Key>
       <PropertyRef Name="ID" />
@@ -90,6 +267,7 @@
     <Property Name="ID_PHAM_VI_DA" Type="int" />
     <Property Name="ID_TIEN_DO" Type="int" />
     <Property Name="TT_DBHD" Type="int" />
+    <Property Name="ID_THU_KY_DA" Type="int" />
   </EntityType>
   <EntityType Name="TBL_HOP_DA">
     <Key>
@@ -326,7 +504,110 @@
     <Property Name="NGAY_TAO" Type="datetime" />
     <Property Name="ID_NGUOI_SUA" Type="int" />
     <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="GHI_CHU" Type="nvarchar" MaxLength="500" />
   </EntityType>
+  <EntityType Name="UNG_VIEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="HO_TEN" Type="nvarchar" MaxLength="50" />
+    <Property Name="NGAY_SINH" Type="date" />
+    <Property Name="SO_DIEN_THOAI" Type="nvarchar" MaxLength="50" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="50" />
+    <Property Name="ID_CHU_DE_BAI_THI" Type="int" />
+    <Property Name="ID_BAI_THI" Type="int" />
+    <Property Name="NGAY_TAO" Type="datetime" />
+    <Property Name="ID_NGUOI_TAO" Type="int" />
+    <Property Name="NGAY_SUA" Type="datetime" />
+    <Property Name="ID_NGUOI_SUA" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TT_XOA" Type="bit" />
+    <Property Name="MA_UNG_VIEN" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_BAI_THI_CAU_HOI_BAI_THI">
+    <End Role="BAI_THI" Type="Self.BAI_THI" Multiplicity="0..1" />
+    <End Role="BAI_THI_CAU_HOI" Type="Self.BAI_THI_CAU_HOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BAI_THI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BAI_THI_CAU_HOI">
+        <PropertyRef Name="ID_BAI_THI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BAI_THI_CAU_HOI_CAU_HOI">
+    <End Role="CAU_HOI" Type="Self.CAU_HOI" Multiplicity="0..1" />
+    <End Role="BAI_THI_CAU_HOI" Type="Self.BAI_THI_CAU_HOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAU_HOI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BAI_THI_CAU_HOI">
+        <PropertyRef Name="ID_CAU_HOI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BAI_THI_CHU_DE_BAI_THI">
+    <End Role="CHU_DE_BAI_THI" Type="Self.CHU_DE_BAI_THI" Multiplicity="0..1" />
+    <End Role="BAI_THI" Type="Self.BAI_THI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CHU_DE_BAI_THI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BAI_THI">
+        <PropertyRef Name="ID_CHU_DE_BAI_THI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BAI_THI_MUC_DO_BAI_THI">
+    <End Role="MUC_DO_BAI_THI" Type="Self.MUC_DO_BAI_THI" Multiplicity="0..1" />
+    <End Role="BAI_THI" Type="Self.BAI_THI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MUC_DO_BAI_THI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BAI_THI">
+        <PropertyRef Name="ID_MUC_DO_BAI_THI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BAI_THI_UNG_VIEN_BAI_THI">
+    <End Role="BAI_THI" Type="Self.BAI_THI" Multiplicity="0..1" />
+    <End Role="BAI_THI_UNG_VIEN" Type="Self.BAI_THI_UNG_VIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BAI_THI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BAI_THI_UNG_VIEN">
+        <PropertyRef Name="ID_BAI_THI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BAI_THI_UNG_VIEN_NGUOI_DANH_GIA">
+    <End Role="NGUOI_DANH_GIA" Type="Self.NGUOI_DANH_GIA" Multiplicity="0..1" />
+    <End Role="BAI_THI_UNG_VIEN" Type="Self.BAI_THI_UNG_VIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NGUOI_DANH_GIA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BAI_THI_UNG_VIEN">
+        <PropertyRef Name="ID_NGUOI_DANH_GIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BAI_THI_UNG_VIEN_UNG_VIEN">
+    <End Role="UNG_VIEN" Type="Self.UNG_VIEN" Multiplicity="0..1" />
+    <End Role="BAI_THI_UNG_VIEN" Type="Self.BAI_THI_UNG_VIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UNG_VIEN">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BAI_THI_UNG_VIEN">
+        <PropertyRef Name="ID_UNG_VIEN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_BAO_CAO_CV_TIMESHEET">
     <End Role="TBL_TIMESHEET" Type="Self.TBL_TIMESHEET" Multiplicity="0..1" />
     <End Role="TBL_BAO_CAO_CV" Type="Self.TBL_BAO_CAO_CV" Multiplicity="*" />
@@ -336,6 +617,90 @@
       </Principal>
       <Dependent Role="TBL_BAO_CAO_CV">
         <PropertyRef Name="ID_TIMESHEET" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAU_HINH_BAI_THI_BAI_THI">
+    <End Role="BAI_THI" Type="Self.BAI_THI" Multiplicity="0..1" />
+    <End Role="CAU_HINH_BAI_THI" Type="Self.CAU_HINH_BAI_THI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BAI_THI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CAU_HINH_BAI_THI">
+        <PropertyRef Name="ID_BAI_THI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAU_HINH_BAI_THI_LOAI_CAU_HOI">
+    <End Role="LOAI_CAU_HOI" Type="Self.LOAI_CAU_HOI" Multiplicity="0..1" />
+    <End Role="CAU_HINH_BAI_THI" Type="Self.CAU_HINH_BAI_THI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAI_CAU_HOI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CAU_HINH_BAI_THI">
+        <PropertyRef Name="ID_LOAI_CAU_HOI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAU_HOI_CHU_DE_BAI_THI">
+    <End Role="CHU_DE_BAI_THI" Type="Self.CHU_DE_BAI_THI" Multiplicity="0..1" />
+    <End Role="CAU_HOI" Type="Self.CAU_HOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CHU_DE_BAI_THI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CAU_HOI">
+        <PropertyRef Name="ID_CHU_DE_BAI_THI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAU_HOI_LOAI_CAU_HOI">
+    <End Role="LOAI_CAU_HOI" Type="Self.LOAI_CAU_HOI" Multiplicity="0..1" />
+    <End Role="CAU_HOI" Type="Self.CAU_HOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAI_CAU_HOI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CAU_HOI">
+        <PropertyRef Name="ID_LOAI_CAU_HOI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAU_HOI_MUC_DO_CAU_HOI1">
+    <End Role="CAU_HOI" Type="Self.CAU_HOI" Multiplicity="0..1" />
+    <End Role="CAU_HOI_MUC_DO" Type="Self.CAU_HOI_MUC_DO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAU_HOI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CAU_HOI_MUC_DO">
+        <PropertyRef Name="ID_CAU_HOI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAU_HOI_MUC_DO_MUC_DO_CAU_HOI2">
+    <End Role="MUC_DO_CAU_HOI" Type="Self.MUC_DO_CAU_HOI" Multiplicity="0..1" />
+    <End Role="CAU_HOI_MUC_DO" Type="Self.CAU_HOI_MUC_DO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MUC_DO_CAU_HOI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CAU_HOI_MUC_DO">
+        <PropertyRef Name="ID_MUC_DO_CAU_HOI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DAP_AN_CAU_HOI">
+    <End Role="CAU_HOI" Type="Self.CAU_HOI" Multiplicity="0..1" />
+    <End Role="DAP_AN" Type="Self.DAP_AN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAU_HOI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DAP_AN">
+        <PropertyRef Name="ID_CAU_HOI" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -436,6 +801,18 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="ATCLModelStoreContainer">
+    <EntitySet Name="BAI_THI" EntityType="Self.BAI_THI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BAI_THI_CAU_HOI" EntityType="Self.BAI_THI_CAU_HOI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BAI_THI_UNG_VIEN" EntityType="Self.BAI_THI_UNG_VIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAU_HINH_BAI_THI" EntityType="Self.CAU_HINH_BAI_THI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAU_HOI" EntityType="Self.CAU_HOI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAU_HOI_MUC_DO" EntityType="Self.CAU_HOI_MUC_DO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CHU_DE_BAI_THI" EntityType="Self.CHU_DE_BAI_THI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DAP_AN" EntityType="Self.DAP_AN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOAI_CAU_HOI" EntityType="Self.LOAI_CAU_HOI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MUC_DO_BAI_THI" EntityType="Self.MUC_DO_BAI_THI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MUC_DO_CAU_HOI" EntityType="Self.MUC_DO_CAU_HOI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NGUOI_DANH_GIA" EntityType="Self.NGUOI_DANH_GIA" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_BAO_CAO_CV" EntityType="Self.TBL_BAO_CAO_CV" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_DANH_MUC" EntityType="Self.TBL_DANH_MUC" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_DS_TAI_LIEU" EntityType="Self.TBL_DS_TAI_LIEU" Schema="dbo" store:Type="Tables" />
@@ -456,9 +833,66 @@
     <EntitySet Name="TBL_RULE" EntityType="Self.TBL_RULE" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_THEO_DOI_CV" EntityType="Self.TBL_THEO_DOI_CV" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBL_TIMESHEET" EntityType="Self.TBL_TIMESHEET" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UNG_VIEN" EntityType="Self.UNG_VIEN" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_BAI_THI_CAU_HOI_BAI_THI" Association="Self.FK_BAI_THI_CAU_HOI_BAI_THI">
+      <End Role="BAI_THI" EntitySet="BAI_THI" />
+      <End Role="BAI_THI_CAU_HOI" EntitySet="BAI_THI_CAU_HOI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BAI_THI_CAU_HOI_CAU_HOI" Association="Self.FK_BAI_THI_CAU_HOI_CAU_HOI">
+      <End Role="CAU_HOI" EntitySet="CAU_HOI" />
+      <End Role="BAI_THI_CAU_HOI" EntitySet="BAI_THI_CAU_HOI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BAI_THI_CHU_DE_BAI_THI" Association="Self.FK_BAI_THI_CHU_DE_BAI_THI">
+      <End Role="CHU_DE_BAI_THI" EntitySet="CHU_DE_BAI_THI" />
+      <End Role="BAI_THI" EntitySet="BAI_THI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BAI_THI_MUC_DO_BAI_THI" Association="Self.FK_BAI_THI_MUC_DO_BAI_THI">
+      <End Role="MUC_DO_BAI_THI" EntitySet="MUC_DO_BAI_THI" />
+      <End Role="BAI_THI" EntitySet="BAI_THI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BAI_THI_UNG_VIEN_BAI_THI" Association="Self.FK_BAI_THI_UNG_VIEN_BAI_THI">
+      <End Role="BAI_THI" EntitySet="BAI_THI" />
+      <End Role="BAI_THI_UNG_VIEN" EntitySet="BAI_THI_UNG_VIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BAI_THI_UNG_VIEN_NGUOI_DANH_GIA" Association="Self.FK_BAI_THI_UNG_VIEN_NGUOI_DANH_GIA">
+      <End Role="NGUOI_DANH_GIA" EntitySet="NGUOI_DANH_GIA" />
+      <End Role="BAI_THI_UNG_VIEN" EntitySet="BAI_THI_UNG_VIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BAI_THI_UNG_VIEN_UNG_VIEN" Association="Self.FK_BAI_THI_UNG_VIEN_UNG_VIEN">
+      <End Role="UNG_VIEN" EntitySet="UNG_VIEN" />
+      <End Role="BAI_THI_UNG_VIEN" EntitySet="BAI_THI_UNG_VIEN" />
+    </AssociationSet>
     <AssociationSet Name="FK_BAO_CAO_CV_TIMESHEET" Association="Self.FK_BAO_CAO_CV_TIMESHEET">
       <End Role="TBL_TIMESHEET" EntitySet="TBL_TIMESHEET" />
       <End Role="TBL_BAO_CAO_CV" EntitySet="TBL_BAO_CAO_CV" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAU_HINH_BAI_THI_BAI_THI" Association="Self.FK_CAU_HINH_BAI_THI_BAI_THI">
+      <End Role="BAI_THI" EntitySet="BAI_THI" />
+      <End Role="CAU_HINH_BAI_THI" EntitySet="CAU_HINH_BAI_THI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAU_HINH_BAI_THI_LOAI_CAU_HOI" Association="Self.FK_CAU_HINH_BAI_THI_LOAI_CAU_HOI">
+      <End Role="LOAI_CAU_HOI" EntitySet="LOAI_CAU_HOI" />
+      <End Role="CAU_HINH_BAI_THI" EntitySet="CAU_HINH_BAI_THI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAU_HOI_CHU_DE_BAI_THI" Association="Self.FK_CAU_HOI_CHU_DE_BAI_THI">
+      <End Role="CHU_DE_BAI_THI" EntitySet="CHU_DE_BAI_THI" />
+      <End Role="CAU_HOI" EntitySet="CAU_HOI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAU_HOI_LOAI_CAU_HOI" Association="Self.FK_CAU_HOI_LOAI_CAU_HOI">
+      <End Role="LOAI_CAU_HOI" EntitySet="LOAI_CAU_HOI" />
+      <End Role="CAU_HOI" EntitySet="CAU_HOI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAU_HOI_MUC_DO_CAU_HOI1" Association="Self.FK_CAU_HOI_MUC_DO_CAU_HOI1">
+      <End Role="CAU_HOI" EntitySet="CAU_HOI" />
+      <End Role="CAU_HOI_MUC_DO" EntitySet="CAU_HOI_MUC_DO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAU_HOI_MUC_DO_MUC_DO_CAU_HOI2" Association="Self.FK_CAU_HOI_MUC_DO_MUC_DO_CAU_HOI2">
+      <End Role="MUC_DO_CAU_HOI" EntitySet="MUC_DO_CAU_HOI" />
+      <End Role="CAU_HOI_MUC_DO" EntitySet="CAU_HOI_MUC_DO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DAP_AN_CAU_HOI" Association="Self.FK_DAP_AN_CAU_HOI">
+      <End Role="CAU_HOI" EntitySet="CAU_HOI" />
+      <End Role="DAP_AN" EntitySet="DAP_AN" />
     </AssociationSet>
     <AssociationSet Name="FK_HOP_HE_THONG_DA" Association="Self.FK_HOP_HE_THONG_DA">
       <End Role="TBL_HE_THONG" EntitySet="TBL_HE_THONG" />

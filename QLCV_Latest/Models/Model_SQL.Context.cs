@@ -25,6 +25,18 @@ namespace CPanel.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<BAI_THI> BAI_THI { get; set; }
+        public virtual DbSet<BAI_THI_CAU_HOI> BAI_THI_CAU_HOI { get; set; }
+        public virtual DbSet<BAI_THI_UNG_VIEN> BAI_THI_UNG_VIEN { get; set; }
+        public virtual DbSet<CAU_HINH_BAI_THI> CAU_HINH_BAI_THI { get; set; }
+        public virtual DbSet<CAU_HOI> CAU_HOI { get; set; }
+        public virtual DbSet<CAU_HOI_MUC_DO> CAU_HOI_MUC_DO { get; set; }
+        public virtual DbSet<CHU_DE_BAI_THI> CHU_DE_BAI_THI { get; set; }
+        public virtual DbSet<DAP_AN> DAP_AN { get; set; }
+        public virtual DbSet<LOAI_CAU_HOI> LOAI_CAU_HOI { get; set; }
+        public virtual DbSet<MUC_DO_BAI_THI> MUC_DO_BAI_THI { get; set; }
+        public virtual DbSet<MUC_DO_CAU_HOI> MUC_DO_CAU_HOI { get; set; }
+        public virtual DbSet<NGUOI_DANH_GIA> NGUOI_DANH_GIA { get; set; }
         public virtual DbSet<TBL_BAO_CAO_CV> TBL_BAO_CAO_CV { get; set; }
         public virtual DbSet<TBL_DANH_MUC> TBL_DANH_MUC { get; set; }
         public virtual DbSet<TBL_DS_TAI_LIEU> TBL_DS_TAI_LIEU { get; set; }
@@ -45,5 +57,6 @@ namespace CPanel.Models
         public virtual DbSet<TBL_RULE> TBL_RULE { get; set; }
         public virtual DbSet<TBL_THEO_DOI_CV> TBL_THEO_DOI_CV { get; set; }
         public virtual DbSet<TBL_TIMESHEET> TBL_TIMESHEET { get; set; }
+        public virtual DbSet<UNG_VIEN> UNG_VIEN { get; set; }
     }
 }

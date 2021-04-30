@@ -1,350 +1,560 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="ATCLModelStoreContainer" CdmEntityContainer="ATCLEntities">
+    <EntitySetMapping Name="BAI_THI">
+      <EntityTypeMapping TypeName="ATCLModel.BAI_THI">
+        <MappingFragment StoreEntitySet="BAI_THI">
+          <ScalarProperty Name="ID_CHU_DE_BAI_THI" ColumnName="ID_CHU_DE_BAI_THI" />
+          <ScalarProperty Name="ID_MUC_DO_BAI_THI" ColumnName="ID_MUC_DO_BAI_THI" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_LOAI_CAU_HOI" ColumnName="ID_LOAI_CAU_HOI" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+          <ScalarProperty Name="THOI_GIAN" ColumnName="THOI_GIAN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BAI_THI_CAU_HOI">
+      <EntityTypeMapping TypeName="ATCLModel.BAI_THI_CAU_HOI">
+        <MappingFragment StoreEntitySet="BAI_THI_CAU_HOI">
+          <ScalarProperty Name="ID_CAU_HOI" ColumnName="ID_CAU_HOI" />
+          <ScalarProperty Name="ID_BAI_THI" ColumnName="ID_BAI_THI" />
+          <ScalarProperty Name="ID_DAP_AN" ColumnName="ID_DAP_AN" />
+          <ScalarProperty Name="TRANG_THAI_GUI_MAIL" ColumnName="TRANG_THAI_GUI_MAIL" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BAI_THI_UNG_VIEN">
+      <EntityTypeMapping TypeName="ATCLModel.BAI_THI_UNG_VIEN">
+        <MappingFragment StoreEntitySet="BAI_THI_UNG_VIEN">
+          <ScalarProperty Name="ID_UNG_VIEN" ColumnName="ID_UNG_VIEN" />
+          <ScalarProperty Name="ID_BAI_THI" ColumnName="ID_BAI_THI" />
+          <ScalarProperty Name="ID_NGUOI_DANH_GIA" ColumnName="ID_NGUOI_DANH_GIA" />
+          <ScalarProperty Name="SO_DIEN_THOAI" ColumnName="SO_DIEN_THOAI" />
+          <ScalarProperty Name="NGAY_SINH" ColumnName="NGAY_SINH" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="VI_TRI_TUYEN_DUNG" ColumnName="VI_TRI_TUYEN_DUNG" />
+          <ScalarProperty Name="KET_QUA_DANH_GIA" ColumnName="KET_QUA_DANH_GIA" />
+          <ScalarProperty Name="NOI_DUNG_DANH_GIA" ColumnName="NOI_DUNG_DANH_GIA" />
+          <ScalarProperty Name="TRANG_THAI_GUI_MAIL" ColumnName="TRANG_THAI_GUI_MAIL" />
+          <ScalarProperty Name="NGAY_GUI_MAIL" ColumnName="NGAY_GUI_MAIL" />
+          <ScalarProperty Name="NGAY_HOAN_THANH_BAI_THI" ColumnName="NGAY_HOAN_THANH_BAI_THI" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAU_HINH_BAI_THI">
+      <EntityTypeMapping TypeName="ATCLModel.CAU_HINH_BAI_THI">
+        <MappingFragment StoreEntitySet="CAU_HINH_BAI_THI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_BAI_THI" ColumnName="ID_BAI_THI" />
+          <ScalarProperty Name="ID_LOAI_CAU_HOI" ColumnName="ID_LOAI_CAU_HOI" />
+          <ScalarProperty Name="SO_LUONG_CAU_DE" ColumnName="SO_LUONG_CAU_DE" />
+          <ScalarProperty Name="SO_LUONG_CAU_TB" ColumnName="SO_LUONG_CAU_TB" />
+          <ScalarProperty Name="SO_LUONG_CAU_KHO" ColumnName="SO_LUONG_CAU_KHO" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAU_HOI">
+      <EntityTypeMapping TypeName="ATCLModel.CAU_HOI">
+        <MappingFragment StoreEntitySet="CAU_HOI">
+          <ScalarProperty Name="NOI_DUNG_CAU_HOI" ColumnName="NOI_DUNG_CAU_HOI" />
+          <ScalarProperty Name="ID_LOAI_CAU_HOI" ColumnName="ID_LOAI_CAU_HOI" />
+          <ScalarProperty Name="ID_BAI_THI" ColumnName="ID_BAI_THI" />
+          <ScalarProperty Name="ID_CHU_DE_BAI_THI" ColumnName="ID_CHU_DE_BAI_THI" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAU_HOI_MUC_DO">
+      <EntityTypeMapping TypeName="ATCLModel.CAU_HOI_MUC_DO">
+        <MappingFragment StoreEntitySet="CAU_HOI_MUC_DO">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_CAU_HOI" ColumnName="ID_CAU_HOI" />
+          <ScalarProperty Name="ID_MUC_DO_CAU_HOI" ColumnName="ID_MUC_DO_CAU_HOI" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHU_DE_BAI_THI">
+      <EntityTypeMapping TypeName="ATCLModel.CHU_DE_BAI_THI">
+        <MappingFragment StoreEntitySet="CHU_DE_BAI_THI">
+          <ScalarProperty Name="TEN_CHU_DE" ColumnName="TEN_CHU_DE" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MA_CHU_DE" ColumnName="MA_CHU_DE" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DAP_AN">
+      <EntityTypeMapping TypeName="ATCLModel.DAP_AN">
+        <MappingFragment StoreEntitySet="DAP_AN">
+          <ScalarProperty Name="NOI_DUNG_DAP_AN" ColumnName="NOI_DUNG_DAP_AN" />
+          <ScalarProperty Name="TRANG_THAI" ColumnName="TRANG_THAI" />
+          <ScalarProperty Name="ID_CAU_HOI" ColumnName="ID_CAU_HOI" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOAI_CAU_HOI">
+      <EntityTypeMapping TypeName="ATCLModel.LOAI_CAU_HOI">
+        <MappingFragment StoreEntitySet="LOAI_CAU_HOI">
+          <ScalarProperty Name="MA_LOAI_CAU_HOI" ColumnName="MA_LOAI_CAU_HOI" />
+          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MUC_DO_BAI_THI">
+      <EntityTypeMapping TypeName="ATCLModel.MUC_DO_BAI_THI">
+        <MappingFragment StoreEntitySet="MUC_DO_BAI_THI">
+          <ScalarProperty Name="TEN_MUC_DO" ColumnName="TEN_MUC_DO" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MA_MUC_DO" ColumnName="MA_MUC_DO" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MUC_DO_CAU_HOI">
+      <EntityTypeMapping TypeName="ATCLModel.MUC_DO_CAU_HOI">
+        <MappingFragment StoreEntitySet="MUC_DO_CAU_HOI">
+          <ScalarProperty Name="MA_MUC_DO" ColumnName="MA_MUC_DO" />
+          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NGUOI_DANH_GIA">
+      <EntityTypeMapping TypeName="ATCLModel.NGUOI_DANH_GIA">
+        <MappingFragment StoreEntitySet="NGUOI_DANH_GIA">
+          <ScalarProperty Name="HO_TEN" ColumnName="HO_TEN" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="CHUC_VU" ColumnName="CHUC_VU" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="TBL_BAO_CAO_CV">
       <EntityTypeMapping TypeName="ATCLModel.TBL_BAO_CAO_CV">
         <MappingFragment StoreEntitySet="TBL_BAO_CAO_CV">
-          <ScalarProperty Name="ID_TIMESHEET" ColumnName="ID_TIMESHEET" />
-          <ScalarProperty Name="TONG_THOI_GIAN" ColumnName="TONG_THOI_GIAN" />
-          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
-          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
-          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
-          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
-          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
-          <ScalarProperty Name="STT" ColumnName="STT" />
-          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
-          <ScalarProperty Name="TEN_CONG_VIEC" ColumnName="TEN_CONG_VIEC" />
-          <ScalarProperty Name="ID_LOAI_CONG_VIEC" ColumnName="ID_LOAI_CONG_VIEC" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_LOAI_CONG_VIEC" ColumnName="ID_LOAI_CONG_VIEC" />
+          <ScalarProperty Name="TEN_CONG_VIEC" ColumnName="TEN_CONG_VIEC" />
+          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="TONG_THOI_GIAN" ColumnName="TONG_THOI_GIAN" />
+          <ScalarProperty Name="ID_TIMESHEET" ColumnName="ID_TIMESHEET" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_DANH_MUC">
       <EntityTypeMapping TypeName="ATCLModel.TBL_DANH_MUC">
         <MappingFragment StoreEntitySet="TBL_DANH_MUC">
-          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
-          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
-          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
-          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
-          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
-          <ScalarProperty Name="STT" ColumnName="STT" />
-          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
-          <ScalarProperty Name="TEN" ColumnName="TEN" />
-          <ScalarProperty Name="MA_DANH_MUC" ColumnName="MA_DANH_MUC" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MA_DANH_MUC" ColumnName="MA_DANH_MUC" />
+          <ScalarProperty Name="TEN" ColumnName="TEN" />
+          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_DS_TAI_LIEU">
       <EntityTypeMapping TypeName="ATCLModel.TBL_DS_TAI_LIEU">
         <MappingFragment StoreEntitySet="TBL_DS_TAI_LIEU">
-          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
-          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
-          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
-          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
-          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
-          <ScalarProperty Name="HDQLTD" ColumnName="HDQLTD" />
-          <ScalarProperty Name="HDBT" ColumnName="HDBT" />
-          <ScalarProperty Name="BBBG_DBHD" ColumnName="BBBG_DBHD" />
-          <ScalarProperty Name="BBNTTT" ColumnName="BBNTTT" />
-          <ScalarProperty Name="BBNTKT" ColumnName="BBNTKT" />
-          <ScalarProperty Name="CODING" ColumnName="CODING" />
-          <ScalarProperty Name="UAT" ColumnName="UAT" />
-          <ScalarProperty Name="HDCDHT" ColumnName="HDCDHT" />
-          <ScalarProperty Name="HDSD" ColumnName="HDSD" />
-          <ScalarProperty Name="PTTK" ColumnName="PTTK" />
-          <ScalarProperty Name="TL2589" ColumnName="TL2589" />
-          <ScalarProperty Name="GPKT" ColumnName="GPKT" />
-          <ScalarProperty Name="DAC_TA_YCKH" ColumnName="DAC_TA_YCKH" />
-          <ScalarProperty Name="ID_HE_THONG" ColumnName="ID_HE_THONG" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_HE_THONG" ColumnName="ID_HE_THONG" />
+          <ScalarProperty Name="DAC_TA_YCKH" ColumnName="DAC_TA_YCKH" />
+          <ScalarProperty Name="GPKT" ColumnName="GPKT" />
+          <ScalarProperty Name="TL2589" ColumnName="TL2589" />
+          <ScalarProperty Name="PTTK" ColumnName="PTTK" />
+          <ScalarProperty Name="HDSD" ColumnName="HDSD" />
+          <ScalarProperty Name="HDCDHT" ColumnName="HDCDHT" />
+          <ScalarProperty Name="UAT" ColumnName="UAT" />
+          <ScalarProperty Name="CODING" ColumnName="CODING" />
+          <ScalarProperty Name="BBNTKT" ColumnName="BBNTKT" />
+          <ScalarProperty Name="BBNTTT" ColumnName="BBNTTT" />
+          <ScalarProperty Name="BBBG_DBHD" ColumnName="BBBG_DBHD" />
+          <ScalarProperty Name="HDBT" ColumnName="HDBT" />
+          <ScalarProperty Name="HDQLTD" ColumnName="HDQLTD" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_HE_THONG">
       <EntityTypeMapping TypeName="ATCLModel.TBL_HE_THONG">
         <MappingFragment StoreEntitySet="TBL_HE_THONG">
-          <ScalarProperty Name="TT_DBHD" ColumnName="TT_DBHD" />
-          <ScalarProperty Name="ID_TIEN_DO" ColumnName="ID_TIEN_DO" />
-          <ScalarProperty Name="ID_PHAM_VI_DA" ColumnName="ID_PHAM_VI_DA" />
-          <ScalarProperty Name="ID_LOAI_TRIEN_KHAI_DA" ColumnName="ID_LOAI_TRIEN_KHAI_DA" />
-          <ScalarProperty Name="ID_NGUOI_PHOI_HOP" ColumnName="ID_NGUOI_PHOI_HOP" />
-          <ScalarProperty Name="ID_NGUOI_THUC_HIEN" ColumnName="ID_NGUOI_THUC_HIEN" />
-          <ScalarProperty Name="ID_PM" ColumnName="ID_PM" />
-          <ScalarProperty Name="ID_PRODUCT_OWNER" ColumnName="ID_PRODUCT_OWNER" />
-          <ScalarProperty Name="ID_TRANG_THAI_DA" ColumnName="ID_TRANG_THAI_DA" />
-          <ScalarProperty Name="MAN_DAY" ColumnName="MAN_DAY" />
-          <ScalarProperty Name="QUY" ColumnName="QUY" />
-          <ScalarProperty Name="NGAY_NGHIEM_THU_TT" ColumnName="NGAY_NGHIEM_THU_TT" />
-          <ScalarProperty Name="NGAY_BAT_DAU_LAM" ColumnName="NGAY_BAT_DAU_LAM" />
-          <ScalarProperty Name="DO_UU_TIEN" ColumnName="DO_UU_TIEN" />
-          <ScalarProperty Name="ID_KH_NSD" ColumnName="ID_KH_NSD" />
-          <ScalarProperty Name="ID_KH_KY_HD" ColumnName="ID_KH_KY_HD" />
-          <ScalarProperty Name="NGAY_KH_YC_HOAN_THANH" ColumnName="NGAY_KH_YC_HOAN_THANH" />
-          <ScalarProperty Name="NGAY_KH_GUI_YC" ColumnName="NGAY_KH_GUI_YC" />
-          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
-          <ScalarProperty Name="TEN" ColumnName="TEN" />
-          <ScalarProperty Name="ID_HOP_DONG" ColumnName="ID_HOP_DONG" />
-          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
-          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
-          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
-          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
-          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
-          <ScalarProperty Name="STT" ColumnName="STT" />
-          <ScalarProperty Name="MA_HE_THONG" ColumnName="MA_HE_THONG" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MA_HE_THONG" ColumnName="MA_HE_THONG" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_HOP_DONG" ColumnName="ID_HOP_DONG" />
+          <ScalarProperty Name="TEN" ColumnName="TEN" />
+          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
+          <ScalarProperty Name="NGAY_KH_GUI_YC" ColumnName="NGAY_KH_GUI_YC" />
+          <ScalarProperty Name="NGAY_KH_YC_HOAN_THANH" ColumnName="NGAY_KH_YC_HOAN_THANH" />
+          <ScalarProperty Name="ID_KH_KY_HD" ColumnName="ID_KH_KY_HD" />
+          <ScalarProperty Name="ID_KH_NSD" ColumnName="ID_KH_NSD" />
+          <ScalarProperty Name="DO_UU_TIEN" ColumnName="DO_UU_TIEN" />
+          <ScalarProperty Name="NGAY_BAT_DAU_LAM" ColumnName="NGAY_BAT_DAU_LAM" />
+          <ScalarProperty Name="NGAY_NGHIEM_THU_TT" ColumnName="NGAY_NGHIEM_THU_TT" />
+          <ScalarProperty Name="QUY" ColumnName="QUY" />
+          <ScalarProperty Name="MAN_DAY" ColumnName="MAN_DAY" />
+          <ScalarProperty Name="ID_TRANG_THAI_DA" ColumnName="ID_TRANG_THAI_DA" />
+          <ScalarProperty Name="ID_PRODUCT_OWNER" ColumnName="ID_PRODUCT_OWNER" />
+          <ScalarProperty Name="ID_PM" ColumnName="ID_PM" />
+          <ScalarProperty Name="ID_NGUOI_THUC_HIEN" ColumnName="ID_NGUOI_THUC_HIEN" />
+          <ScalarProperty Name="ID_NGUOI_PHOI_HOP" ColumnName="ID_NGUOI_PHOI_HOP" />
+          <ScalarProperty Name="ID_LOAI_TRIEN_KHAI_DA" ColumnName="ID_LOAI_TRIEN_KHAI_DA" />
+          <ScalarProperty Name="ID_PHAM_VI_DA" ColumnName="ID_PHAM_VI_DA" />
+          <ScalarProperty Name="ID_TIEN_DO" ColumnName="ID_TIEN_DO" />
+          <ScalarProperty Name="TT_DBHD" ColumnName="TT_DBHD" />
+          <ScalarProperty Name="ID_THU_KY_DA" ColumnName="ID_THU_KY_DA" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_HOP_DA">
       <EntityTypeMapping TypeName="ATCLModel.TBL_HOP_DA">
         <MappingFragment StoreEntitySet="TBL_HOP_DA">
-          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
-          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
-          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
-          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
-          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
-          <ScalarProperty Name="STT" ColumnName="STT" />
-          <ScalarProperty Name="URL" ColumnName="URL" />
-          <ScalarProperty Name="GHI_CHU" ColumnName="GHI_CHU" />
-          <ScalarProperty Name="NOI_DUNG_HOP" ColumnName="NOI_DUNG_HOP" />
-          <ScalarProperty Name="ID_HINH_THUC_HOP" ColumnName="ID_HINH_THUC_HOP" />
-          <ScalarProperty Name="ID_KIEU_HOP" ColumnName="ID_KIEU_HOP" />
-          <ScalarProperty Name="DIA_DIEM" ColumnName="DIA_DIEM" />
-          <ScalarProperty Name="GIO_KET_THUC" ColumnName="GIO_KET_THUC" />
-          <ScalarProperty Name="GIO_BAT_DAU" ColumnName="GIO_BAT_DAU" />
-          <ScalarProperty Name="NGAY_HOP" ColumnName="NGAY_HOP" />
-          <ScalarProperty Name="ID_HE_THONG" ColumnName="ID_HE_THONG" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_HE_THONG" ColumnName="ID_HE_THONG" />
+          <ScalarProperty Name="NGAY_HOP" ColumnName="NGAY_HOP" />
+          <ScalarProperty Name="GIO_BAT_DAU" ColumnName="GIO_BAT_DAU" />
+          <ScalarProperty Name="GIO_KET_THUC" ColumnName="GIO_KET_THUC" />
+          <ScalarProperty Name="DIA_DIEM" ColumnName="DIA_DIEM" />
+          <ScalarProperty Name="ID_KIEU_HOP" ColumnName="ID_KIEU_HOP" />
+          <ScalarProperty Name="ID_HINH_THUC_HOP" ColumnName="ID_HINH_THUC_HOP" />
+          <ScalarProperty Name="NOI_DUNG_HOP" ColumnName="NOI_DUNG_HOP" />
+          <ScalarProperty Name="GHI_CHU" ColumnName="GHI_CHU" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_HOP_DONG">
       <EntityTypeMapping TypeName="ATCLModel.TBL_HOP_DONG">
         <MappingFragment StoreEntitySet="TBL_HOP_DONG">
-          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
-          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
-          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
-          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
-          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
-          <ScalarProperty Name="STT" ColumnName="STT" />
-          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
-          <ScalarProperty Name="TEN" ColumnName="TEN" />
-          <ScalarProperty Name="SO_HOP_DONG" ColumnName="SO_HOP_DONG" />
-          <ScalarProperty Name="MA_HOP_DONG" ColumnName="MA_HOP_DONG" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MA_HOP_DONG" ColumnName="MA_HOP_DONG" />
+          <ScalarProperty Name="SO_HOP_DONG" ColumnName="SO_HOP_DONG" />
+          <ScalarProperty Name="TEN" ColumnName="TEN" />
+          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_MENU">
       <EntityTypeMapping TypeName="ATCLModel.TBL_MENU">
         <MappingFragment StoreEntitySet="TBL_MENU">
-          <ScalarProperty Name="ID_NGON_NGU" ColumnName="ID_NGON_NGU" />
-          <ScalarProperty Name="STT" ColumnName="STT" />
-          <ScalarProperty Name="ID_CHA" ColumnName="ID_CHA" />
-          <ScalarProperty Name="isEnabled" ColumnName="isEnabled" />
-          <ScalarProperty Name="LINK" ColumnName="LINK" />
-          <ScalarProperty Name="TEN_URL" ColumnName="TEN_URL" />
-          <ScalarProperty Name="TEN" ColumnName="TEN" />
-          <ScalarProperty Name="ID_LOAI_MENU" ColumnName="ID_LOAI_MENU" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_LOAI_MENU" ColumnName="ID_LOAI_MENU" />
+          <ScalarProperty Name="TEN" ColumnName="TEN" />
+          <ScalarProperty Name="TEN_URL" ColumnName="TEN_URL" />
+          <ScalarProperty Name="LINK" ColumnName="LINK" />
+          <ScalarProperty Name="isEnabled" ColumnName="isEnabled" />
+          <ScalarProperty Name="ID_CHA" ColumnName="ID_CHA" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="ID_NGON_NGU" ColumnName="ID_NGON_NGU" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_MENU_LOAI">
       <EntityTypeMapping TypeName="ATCLModel.TBL_MENU_LOAI">
         <MappingFragment StoreEntitySet="TBL_MENU_LOAI">
-          <ScalarProperty Name="CODE" ColumnName="CODE" />
-          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
-          <ScalarProperty Name="TIEU_DE" ColumnName="TIEU_DE" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TIEU_DE" ColumnName="TIEU_DE" />
+          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_MENU_QUYEN">
       <EntityTypeMapping TypeName="ATCLModel.TBL_MENU_QUYEN">
         <MappingFragment StoreEntitySet="TBL_MENU_QUYEN">
-          <ScalarProperty Name="ID_MENU" ColumnName="ID_MENU" />
-          <ScalarProperty Name="ID_QUYEN" ColumnName="ID_QUYEN" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_QUYEN" ColumnName="ID_QUYEN" />
+          <ScalarProperty Name="ID_MENU" ColumnName="ID_MENU" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_NGUOI_DUNG">
       <EntityTypeMapping TypeName="ATCLModel.TBL_NGUOI_DUNG">
         <MappingFragment StoreEntitySet="TBL_NGUOI_DUNG">
-          <ScalarProperty Name="FullName" ColumnName="FullName" />
-          <ScalarProperty Name="Tel" ColumnName="Tel" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="isEnabled" ColumnName="isEnabled" />
-          <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="LastName" ColumnName="LastName" />
-          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
           <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
+          <ScalarProperty Name="isEnabled" ColumnName="isEnabled" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_NGUOI_DUNG_PHONG_BAN">
       <EntityTypeMapping TypeName="ATCLModel.TBL_NGUOI_DUNG_PHONG_BAN">
         <MappingFragment StoreEntitySet="TBL_NGUOI_DUNG_PHONG_BAN">
-          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
-          <ScalarProperty Name="isLeader" ColumnName="isLeader" />
-          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
-          <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="isLeader" ColumnName="isLeader" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_NGUOI_DUNG_QUYEN">
       <EntityTypeMapping TypeName="ATCLModel.TBL_NGUOI_DUNG_QUYEN">
         <MappingFragment StoreEntitySet="TBL_NGUOI_DUNG_QUYEN">
-          <ScalarProperty Name="ID_QUYEN" ColumnName="ID_QUYEN" />
-          <ScalarProperty Name="ID_NGUOI_DUNG" ColumnName="ID_NGUOI_DUNG" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_NGUOI_DUNG" ColumnName="ID_NGUOI_DUNG" />
+          <ScalarProperty Name="ID_QUYEN" ColumnName="ID_QUYEN" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_NHIEM_VU">
       <EntityTypeMapping TypeName="ATCLModel.TBL_NHIEM_VU">
         <MappingFragment StoreEntitySet="TBL_NHIEM_VU">
-          <ScalarProperty Name="SPRINT" ColumnName="SPRINT" />
-          <ScalarProperty Name="STT" ColumnName="STT" />
-          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
-          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
-          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
-          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
-          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
-          <ScalarProperty Name="GHI_CHU" ColumnName="GHI_CHU" />
-          <ScalarProperty Name="PHAN_TRAM_KET_QUA" ColumnName="PHAN_TRAM_KET_QUA" />
-          <ScalarProperty Name="ID_KET_QUA" ColumnName="ID_KET_QUA" />
-          <ScalarProperty Name="SO_NGAY_TT" ColumnName="SO_NGAY_TT" />
-          <ScalarProperty Name="NGAY_KET_THUC_TT" ColumnName="NGAY_KET_THUC_TT" />
-          <ScalarProperty Name="NGAY_BAT_DAU_TT" ColumnName="NGAY_BAT_DAU_TT" />
-          <ScalarProperty Name="SO_NGAY_DK" ColumnName="SO_NGAY_DK" />
-          <ScalarProperty Name="NGAY_KET_THUC_DK" ColumnName="NGAY_KET_THUC_DK" />
-          <ScalarProperty Name="NGAY_BAT_DAU_DK" ColumnName="NGAY_BAT_DAU_DK" />
-          <ScalarProperty Name="ID_NGUOI_PHOI_HOP" ColumnName="ID_NGUOI_PHOI_HOP" />
-          <ScalarProperty Name="ID_NGUOI_CHU_TRI" ColumnName="ID_NGUOI_CHU_TRI" />
-          <ScalarProperty Name="TEN_NHIEM_VU" ColumnName="TEN_NHIEM_VU" />
-          <ScalarProperty Name="ID_CHANGE_REQUEST" ColumnName="ID_CHANGE_REQUEST" />
-          <ScalarProperty Name="ID_HE_THONG_DA" ColumnName="ID_HE_THONG_DA" />
-          <ScalarProperty Name="ID_CHA" ColumnName="ID_CHA" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_CHA" ColumnName="ID_CHA" />
+          <ScalarProperty Name="ID_HE_THONG_DA" ColumnName="ID_HE_THONG_DA" />
+          <ScalarProperty Name="ID_CHANGE_REQUEST" ColumnName="ID_CHANGE_REQUEST" />
+          <ScalarProperty Name="TEN_NHIEM_VU" ColumnName="TEN_NHIEM_VU" />
+          <ScalarProperty Name="ID_NGUOI_CHU_TRI" ColumnName="ID_NGUOI_CHU_TRI" />
+          <ScalarProperty Name="ID_NGUOI_PHOI_HOP" ColumnName="ID_NGUOI_PHOI_HOP" />
+          <ScalarProperty Name="NGAY_BAT_DAU_DK" ColumnName="NGAY_BAT_DAU_DK" />
+          <ScalarProperty Name="NGAY_KET_THUC_DK" ColumnName="NGAY_KET_THUC_DK" />
+          <ScalarProperty Name="SO_NGAY_DK" ColumnName="SO_NGAY_DK" />
+          <ScalarProperty Name="NGAY_BAT_DAU_TT" ColumnName="NGAY_BAT_DAU_TT" />
+          <ScalarProperty Name="NGAY_KET_THUC_TT" ColumnName="NGAY_KET_THUC_TT" />
+          <ScalarProperty Name="SO_NGAY_TT" ColumnName="SO_NGAY_TT" />
+          <ScalarProperty Name="ID_KET_QUA" ColumnName="ID_KET_QUA" />
+          <ScalarProperty Name="PHAN_TRAM_KET_QUA" ColumnName="PHAN_TRAM_KET_QUA" />
+          <ScalarProperty Name="GHI_CHU" ColumnName="GHI_CHU" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="SPRINT" ColumnName="SPRINT" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_PHONG_BAN">
       <EntityTypeMapping TypeName="ATCLModel.TBL_PHONG_BAN">
         <MappingFragment StoreEntitySet="TBL_PHONG_BAN">
-          <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
-          <ScalarProperty Name="IdParent" ColumnName="IdParent" />
-          <ScalarProperty Name="isVisible" ColumnName="isVisible" />
-          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
-          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
-          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
           <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="isVisible" ColumnName="isVisible" />
+          <ScalarProperty Name="IdParent" ColumnName="IdParent" />
+          <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_QUYEN">
       <EntityTypeMapping TypeName="ATCLModel.TBL_QUYEN">
         <MappingFragment StoreEntitySet="TBL_QUYEN">
-          <ScalarProperty Name="ID_PARENT" ColumnName="ID_PARENT" />
-          <ScalarProperty Name="CODE" ColumnName="CODE" />
-          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
-          <ScalarProperty Name="NAME" ColumnName="NAME" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="ID_PARENT" ColumnName="ID_PARENT" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_QUYEN_RULE">
       <EntityTypeMapping TypeName="ATCLModel.TBL_QUYEN_RULE">
         <MappingFragment StoreEntitySet="TBL_QUYEN_RULE">
-          <ScalarProperty Name="ID_RULE" ColumnName="ID_RULE" />
-          <ScalarProperty Name="ID_QUYEN" ColumnName="ID_QUYEN" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_QUYEN" ColumnName="ID_QUYEN" />
+          <ScalarProperty Name="ID_RULE" ColumnName="ID_RULE" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_RUI_RO">
       <EntityTypeMapping TypeName="ATCLModel.TBL_RUI_RO">
         <MappingFragment StoreEntitySet="TBL_RUI_RO">
-          <ScalarProperty Name="TT_TRACH_NHIEM_DT" ColumnName="TT_TRACH_NHIEM_DT" />
-          <ScalarProperty Name="TT_TRACH_NHIEM_AITS" ColumnName="TT_TRACH_NHIEM_AITS" />
-          <ScalarProperty Name="TT_TRACH_NHIEM_KH" ColumnName="TT_TRACH_NHIEM_KH" />
-          <ScalarProperty Name="NGAY_PHAT_SINH" ColumnName="NGAY_PHAT_SINH" />
-          <ScalarProperty Name="NGAY_KET_THUC" ColumnName="NGAY_KET_THUC" />
-          <ScalarProperty Name="NGAY_BAT_DAU" ColumnName="NGAY_BAT_DAU" />
-          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
-          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
-          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
-          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
-          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
-          <ScalarProperty Name="STT" ColumnName="STT" />
-          <ScalarProperty Name="ID_NGUOI_CHU_TRI" ColumnName="ID_NGUOI_CHU_TRI" />
-          <ScalarProperty Name="ID_KET_QUA" ColumnName="ID_KET_QUA" />
-          <ScalarProperty Name="ID_MUC_UU_TIEN" ColumnName="ID_MUC_UU_TIEN" />
-          <ScalarProperty Name="GHI_CHU" ColumnName="GHI_CHU" />
-          <ScalarProperty Name="KIEN_NGHI" ColumnName="KIEN_NGHI" />
-          <ScalarProperty Name="GIAI_PHAP" ColumnName="GIAI_PHAP" />
-          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
-          <ScalarProperty Name="NOI_DUNG" ColumnName="NOI_DUNG" />
-          <ScalarProperty Name="MA_RUI_RO" ColumnName="MA_RUI_RO" />
-          <ScalarProperty Name="ID_HE_THONG" ColumnName="ID_HE_THONG" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_HE_THONG" ColumnName="ID_HE_THONG" />
+          <ScalarProperty Name="MA_RUI_RO" ColumnName="MA_RUI_RO" />
+          <ScalarProperty Name="NOI_DUNG" ColumnName="NOI_DUNG" />
+          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
+          <ScalarProperty Name="GIAI_PHAP" ColumnName="GIAI_PHAP" />
+          <ScalarProperty Name="KIEN_NGHI" ColumnName="KIEN_NGHI" />
+          <ScalarProperty Name="GHI_CHU" ColumnName="GHI_CHU" />
+          <ScalarProperty Name="ID_MUC_UU_TIEN" ColumnName="ID_MUC_UU_TIEN" />
+          <ScalarProperty Name="ID_KET_QUA" ColumnName="ID_KET_QUA" />
+          <ScalarProperty Name="ID_NGUOI_CHU_TRI" ColumnName="ID_NGUOI_CHU_TRI" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="NGAY_BAT_DAU" ColumnName="NGAY_BAT_DAU" />
+          <ScalarProperty Name="NGAY_KET_THUC" ColumnName="NGAY_KET_THUC" />
+          <ScalarProperty Name="NGAY_PHAT_SINH" ColumnName="NGAY_PHAT_SINH" />
+          <ScalarProperty Name="TT_TRACH_NHIEM_KH" ColumnName="TT_TRACH_NHIEM_KH" />
+          <ScalarProperty Name="TT_TRACH_NHIEM_AITS" ColumnName="TT_TRACH_NHIEM_AITS" />
+          <ScalarProperty Name="TT_TRACH_NHIEM_DT" ColumnName="TT_TRACH_NHIEM_DT" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_RULE">
       <EntityTypeMapping TypeName="ATCLModel.TBL_RULE">
         <MappingFragment StoreEntitySet="TBL_RULE">
-          <ScalarProperty Name="ORDER" ColumnName="ORDER" />
-          <ScalarProperty Name="ID_PARENT" ColumnName="ID_PARENT" />
-          <ScalarProperty Name="isEnabled" ColumnName="isEnabled" />
-          <ScalarProperty Name="CODE" ColumnName="CODE" />
-          <ScalarProperty Name="NAME" ColumnName="NAME" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="isEnabled" ColumnName="isEnabled" />
+          <ScalarProperty Name="ID_PARENT" ColumnName="ID_PARENT" />
+          <ScalarProperty Name="ORDER" ColumnName="ORDER" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_THEO_DOI_CV">
       <EntityTypeMapping TypeName="ATCLModel.TBL_THEO_DOI_CV">
         <MappingFragment StoreEntitySet="TBL_THEO_DOI_CV">
-          <ScalarProperty Name="ID_MUC_DO_CV" ColumnName="ID_MUC_DO_CV" />
-          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
-          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
-          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
-          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
-          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
-          <ScalarProperty Name="GHI_CHU" ColumnName="GHI_CHU" />
-          <ScalarProperty Name="ID_KET_QUA_CV" ColumnName="ID_KET_QUA_CV" />
-          <ScalarProperty Name="NGAY_KET_THUC" ColumnName="NGAY_KET_THUC" />
-          <ScalarProperty Name="NGAY_BAT_DAU" ColumnName="NGAY_BAT_DAU" />
-          <ScalarProperty Name="ID_NGUOI_PHOI_HOP" ColumnName="ID_NGUOI_PHOI_HOP" />
-          <ScalarProperty Name="ID_NGUOI_CHU_TRI" ColumnName="ID_NGUOI_CHU_TRI" />
-          <ScalarProperty Name="ID_HOP_DONG" ColumnName="ID_HOP_DONG" />
-          <ScalarProperty Name="ID_HE_THONG" ColumnName="ID_HE_THONG" />
-          <ScalarProperty Name="TEN_CONG_VIEC" ColumnName="TEN_CONG_VIEC" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TEN_CONG_VIEC" ColumnName="TEN_CONG_VIEC" />
+          <ScalarProperty Name="ID_HE_THONG" ColumnName="ID_HE_THONG" />
+          <ScalarProperty Name="ID_HOP_DONG" ColumnName="ID_HOP_DONG" />
+          <ScalarProperty Name="ID_NGUOI_CHU_TRI" ColumnName="ID_NGUOI_CHU_TRI" />
+          <ScalarProperty Name="ID_NGUOI_PHOI_HOP" ColumnName="ID_NGUOI_PHOI_HOP" />
+          <ScalarProperty Name="NGAY_BAT_DAU" ColumnName="NGAY_BAT_DAU" />
+          <ScalarProperty Name="NGAY_KET_THUC" ColumnName="NGAY_KET_THUC" />
+          <ScalarProperty Name="ID_KET_QUA_CV" ColumnName="ID_KET_QUA_CV" />
+          <ScalarProperty Name="GHI_CHU" ColumnName="GHI_CHU" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_MUC_DO_CV" ColumnName="ID_MUC_DO_CV" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TBL_TIMESHEET">
       <EntityTypeMapping TypeName="ATCLModel.TBL_TIMESHEET">
         <MappingFragment StoreEntitySet="TBL_TIMESHEET">
-          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KHO_KHAN_KIEN_NGHI" ColumnName="KHO_KHAN_KIEN_NGHI" />
+          <ScalarProperty Name="SANG_KIEN" ColumnName="SANG_KIEN" />
+          <ScalarProperty Name="TONG_THOI_GIAN" ColumnName="TONG_THOI_GIAN" />
+          <ScalarProperty Name="NGAY_BAO_CAO" ColumnName="NGAY_BAO_CAO" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+          <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
           <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="GHI_CHU" ColumnName="GHI_CHU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNG_VIEN">
+      <EntityTypeMapping TypeName="ATCLModel.UNG_VIEN">
+        <MappingFragment StoreEntitySet="UNG_VIEN">
+          <ScalarProperty Name="HO_TEN" ColumnName="HO_TEN" />
+          <ScalarProperty Name="NGAY_SINH" ColumnName="NGAY_SINH" />
+          <ScalarProperty Name="SO_DIEN_THOAI" ColumnName="SO_DIEN_THOAI" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="ID_CHU_DE_BAI_THI" ColumnName="ID_CHU_DE_BAI_THI" />
+          <ScalarProperty Name="ID_BAI_THI" ColumnName="ID_BAI_THI" />
           <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
           <ScalarProperty Name="ID_NGUOI_TAO" ColumnName="ID_NGUOI_TAO" />
-          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
-          <ScalarProperty Name="STT" ColumnName="STT" />
-          <ScalarProperty Name="NGAY_BAO_CAO" ColumnName="NGAY_BAO_CAO" />
-          <ScalarProperty Name="TONG_THOI_GIAN" ColumnName="TONG_THOI_GIAN" />
-          <ScalarProperty Name="SANG_KIEN" ColumnName="SANG_KIEN" />
-          <ScalarProperty Name="KHO_KHAN_KIEN_NGHI" ColumnName="KHO_KHAN_KIEN_NGHI" />
+          <ScalarProperty Name="NGAY_SUA" ColumnName="NGAY_SUA" />
+          <ScalarProperty Name="ID_NGUOI_SUA" ColumnName="ID_NGUOI_SUA" />
           <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TT_XOA" ColumnName="TT_XOA" />
+          <ScalarProperty Name="MA_UNG_VIEN" ColumnName="MA_UNG_VIEN" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -14,6 +14,7 @@ namespace CPanel.Models
     
     public partial class TBL_MENU
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TBL_MENU()
         {
             this.TBL_MENU_QUYEN = new HashSet<TBL_MENU_QUYEN>();
@@ -29,6 +30,7 @@ namespace CPanel.Models
         public int STT { get; set; }
         public Nullable<int> ID_NGON_NGU { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBL_MENU_QUYEN> TBL_MENU_QUYEN { get; set; }
         public virtual TBL_MENU_LOAI TBL_MENU_LOAI { get; set; }
     }

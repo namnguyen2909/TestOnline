@@ -14,6 +14,7 @@ namespace CPanel.Models
     
     public partial class TBL_HOP_DONG
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TBL_HOP_DONG()
         {
             this.TBL_HE_THONG = new HashSet<TBL_HE_THONG>();
@@ -31,6 +32,7 @@ namespace CPanel.Models
         public Nullable<int> ID_NGUOI_SUA { get; set; }
         public Nullable<System.DateTime> NGAY_SUA { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBL_HE_THONG> TBL_HE_THONG { get; set; }
     }
 }

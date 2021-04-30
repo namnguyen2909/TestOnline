@@ -30,7 +30,7 @@ namespace CPanel.Commons
         public static string SESSION_OBJECT_ID = "SESSION_OBJECT_ID";
         public static string SESSION_PARENT_OBJECT_ID = "SESSION_PARENT_OBJECT_ID";
         public static string SESSION_HE_THONG_ID = "SESSION_HE_THONG_ID";
-        
+
 
         public static string SESSION_NAME_REPORT_DATE = "SS_REPORT_DATE";
         public static string SESSION_NAME_REPORT_ID = "SS_REPORT_ID";
@@ -64,7 +64,7 @@ namespace CPanel.Commons
     {
         public static string RULE_NV_PTSPDVPM = "NV_PTSPDVPM";
         public static string RULE_LD_PTSPDVPM = "LD_PTSPDVPM";
-        public static string RULE_TK_PTSPDVPM = "TK_PTSPDVPM";  
+        public static string RULE_TK_PTSPDVPM = "TK_PTSPDVPM";
     }
 
     public class Open_Report_Rules
@@ -88,7 +88,7 @@ namespace CPanel.Commons
         public static string FLIGHT_REPORT_REQUEST_ADJUST_SEND = "FLIGHT_REPORT_REQUEST_ADJUST_SEND";
         public static string FLIGHT_REPORT_EXPORT = "FLIGHT_REPORT_EXPORT";
         public static string FLIGHT_REPORT_CONFIRM = "FLIGHT_REPORT_CONFIRM";
-        
+
     }
 
     public class Violate_Report_Rules
@@ -136,7 +136,7 @@ namespace CPanel.Commons
         public static string EXPLOITATION_REPORT_EXPORT = "EXPLOITATION_REPORT_EXPORT";
         public static string EXPLOITATION_REPORT_CONFIRM = "EXPLOITATION_REPORT_CONFIRM";
         public static string EXPLOITATION_REPORT_TRANSFER = "EXPLOITATION_REPORT_TRANSFER";
-        
+
     }
 
     public class Target_Report_Rules
@@ -147,7 +147,7 @@ namespace CPanel.Commons
         public static string TARGET_REPORT_REQUEST_ADJUST = "TARGET_REPORT_REQUEST_ADJUST";
         public static string TARGET_REPORT_EXPORT = "TARGET_REPORT_EXPORT";
         public static string TARGET_REPORT_CONFIRM = "TARGET_REPORT_CONFIRM";
-        public static string TARGET_REPORT_TRANSFER = "TARGET_REPORT_TRANSFER";        
+        public static string TARGET_REPORT_TRANSFER = "TARGET_REPORT_TRANSFER";
 
     }
 
@@ -183,7 +183,7 @@ namespace CPanel.Commons
     {
         public static string WAIT_OC_APPROVAL = "FR_WAIT_OC_APPROVAL";
         public static string WAIT_DEPARTMENT_ADJUSTMENT = "FR_WAIT_DEPARTMENT_ADJUSTMENT";
-        public static string OC_APPROVAL = "FR_OC_APPROVAL";        
+        public static string OC_APPROVAL = "FR_OC_APPROVAL";
     }
 
     public class ATCL_TargetReport_Status
@@ -207,7 +207,7 @@ namespace CPanel.Commons
         public static string WAIT_DEPARTMENT_NOTE = "UR_WAIT_DEPARTMENT_NOTE";
         public static string DEPARTMENT_NOTE = "UR_DEPARTMENT_NOTE";
         public static string REQUEST_TO_ADD_INVALID_REPORT = "UR_REQUEST_TO_ADD_INVALID_REPORT";
-        public static string CLOSE_REPORT = "UR_CLOSE_REPORT";                                   
+        public static string CLOSE_REPORT = "UR_CLOSE_REPORT";
     }
 
     public class ATCL_RiskReport_Status
@@ -229,14 +229,14 @@ namespace CPanel.Commons
         public static string DEPARTMENT_NOTE = "VR_DEPARTMENT_NOTE";
         public static string SEND_RESULT_OF_PROCESSING = "VR_SEND_RESULT_OF_PROCESSING";
         public static string REQUEST_TO_ADD_INVALID_REPORT = "VR_REQUEST_TO_ADD_INVALID_REPORT";
-        public static string CLOSE_REPORT = "VR_CLOSE_REPORT";        
+        public static string CLOSE_REPORT = "VR_CLOSE_REPORT";
     }
 
     public class ATCL_InvalidReport_Status
     {
         public static string TEMPORARY = "IR_TEMPORARY";
         public static string NEW_REPORT = "IR_NEW_REPORT";
-        public static string WAIT_ADJUSTMENT = "IR_WAIT_ADJUSTMENT";        
+        public static string WAIT_ADJUSTMENT = "IR_WAIT_ADJUSTMENT";
         public static string WAIT_SAFETY_APPROVEMENT = "IR_WAIT_SAFETY_APPROVEMENT";
         public static string WAIT_CEO_APPROVEMENT = "IR_WAIT_CEO_APPROVEMENT";
         public static string CEO_APPROVEMENT = "IR_CEO_APPROVEMENT";
@@ -244,7 +244,7 @@ namespace CPanel.Commons
         public static string SEND_REPORT_AFTER_LT_RECOVERY = "IR_SEND_REPORT_AFTER_LT_RECOVERY";
         public static string CLOSE_REPORT = "IR_CLOSE_REPORT";
         public static string VERIFIED_REPORT = "IR_VERIFIED_REPORT";
-        public static string NEW_LONG_TERM_RECOVERY = "IR_NEW_LONG_TERM_RECOVERY";        
+        public static string NEW_LONG_TERM_RECOVERY = "IR_NEW_LONG_TERM_RECOVERY";
     }
     public class ATCL_GuardReport_Status
     {
@@ -258,7 +258,7 @@ namespace CPanel.Commons
     {
         public static string WAIT_OC_APPROVAL = "ER_WAIT_OC_APPROVAL";
         public static string WAIT_DEPARTMENT_ADJUSTMENT = "ER_WAIT_DEPARTMENT_ADJUSTMENT";
-        public static string OC_APPROVAL = "ER_OC_APPROVAL";        
+        public static string OC_APPROVAL = "ER_OC_APPROVAL";
     }
     /**********END: CLASS Status Report*************************/
 
@@ -274,7 +274,7 @@ namespace CPanel.Commons
         public static string TIME_FORMAT_HH_MM_SS_EMPTY = "00:00:00";
 
         public static string TIME_FORMAT_G = "g";
-        
+
         public static string DATE_FORMAT_DD_MM_YYYY = "dd-MM-yyyy";
         public static string DATE_FORMAT_YYYYMMDD = "yyyyMMdd";
         public static string DATE_FORMAT_MM_DD_YYYY = "MM/dd/yyyy";
@@ -287,7 +287,7 @@ namespace CPanel.Commons
             int weekNum = ciCurr.Calendar.GetWeekOfYear(dtDay, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday);
             return weekNum;
         }
-                
+
     }
     /**********END: CLASS DateTimeType*************************/
 
@@ -308,18 +308,43 @@ namespace CPanel.Commons
         public static void getCapDo(DropDownList drpObj)
         {
             //drpObj.Items.Insert(0, new ListItem(Commons.CommonFuncs.BLANK_ITEM_TITLE, Commons.CommonFuncs.BLANK_ITEM_VALUE));
-            for (int i = 1; i<6; i++)
+            for (int i = 1; i < 6; i++)
             {
-                drpObj.Items.Insert(i-1, new ListItem(i.ToString(), i.ToString()));
+                drpObj.Items.Insert(i - 1, new ListItem(i.ToString(), i.ToString()));
             }
 
-            
+
+            drpObj.SelectedIndex = 0;
+        }
+
+        /**
+         * Get DS Chu de cau hoi
+         */
+        public static void getChuDe(DropDownList drpObj, ATCLEntities entities)
+        {
+            drpObj.DataSource = entities.CHU_DE_BAI_THI.Where(x => x.TT_XOA == false).ToList();
+            drpObj.DataValueField = "ID";
+            drpObj.DataTextField = "TEN_CHU_DE";
+            drpObj.DataBind();
+
+            drpObj.Items.Insert(0, new ListItem(Commons.CommonFuncs.BLANK_ITEM_TITLE, Commons.CommonFuncs.BLANK_ITEM_VALUE));
+            drpObj.SelectedIndex = 0;
+        }
+
+        public static void getMucDoBaiThi(DropDownList drpObj, ATCLEntities entities)
+        {
+            drpObj.DataSource = entities.MUC_DO_BAI_THI.Where(x => x.TT_XOA == false).ToList();
+            drpObj.DataValueField = "ID";
+            drpObj.DataTextField = "TEN_MUC_DO";
+            drpObj.DataBind();
+
+            drpObj.Items.Insert(0, new ListItem(Commons.CommonFuncs.BLANK_ITEM_TITLE, Commons.CommonFuncs.BLANK_ITEM_VALUE));
             drpObj.SelectedIndex = 0;
         }
 
         /**
          * Get DS He thong
-         */ 
+         */
         public static void getHeThong(DropDownList drpObj, ATCLEntities entities)
         {
             drpObj.DataSource = entities.TBL_HE_THONG.Where(x => x.TT_XOA == false).OrderBy(y => y.STT).ToList();
@@ -373,15 +398,15 @@ namespace CPanel.Commons
             drpObj.SelectedIndex = 0;
         }
 
-        
+
         /**
          * Get list of Department ID by User ID
          */
-        public static List<int> getDepartmentID_ByUserID (int intUserID, ATCLEntities entities)
+        public static List<int> getDepartmentID_ByUserID(int intUserID, ATCLEntities entities)
         {
             List<int> lstObj = entities.TBL_NGUOI_DUNG_PHONG_BAN.Join(entities.TBL_PHONG_BAN, NDPB => NDPB.DepartmentID, PB => PB.Id, (NDPB, PB) => new { NDPB, PB })
-                                                    .Where(x => (x.NDPB.UserID == intUserID) && (x.PB.isDeleted == false)).Select(y=>(int)y.NDPB.DepartmentID).ToList();
-            
+                                                    .Where(x => (x.NDPB.UserID == intUserID) && (x.PB.isDeleted == false)).Select(y => (int)y.NDPB.DepartmentID).ToList();
+
 
             return lstObj;
         }
@@ -389,7 +414,7 @@ namespace CPanel.Commons
         /**
          * Get Department ID by DepartmentCode
          */
-        public static int getDepartmentID_ByDepartmentCode (string strDepartmentCode, ATCLEntities entities)
+        public static int getDepartmentID_ByDepartmentCode(string strDepartmentCode, ATCLEntities entities)
         {
             return entities.TBL_PHONG_BAN.Where(x => (strDepartmentCode.Equals(x.DepartmentCode) && (x.isDeleted == false))).Select(y => (int)y.Id).FirstOrDefault();
         }
@@ -400,7 +425,7 @@ namespace CPanel.Commons
         public static List<TBL_PHONG_BAN> getDepartments_ByUserID(int intUserID, ATCLEntities entities)
         {
             List<TBL_PHONG_BAN> lstObj = entities.TBL_NGUOI_DUNG_PHONG_BAN.Join(entities.TBL_PHONG_BAN, NDPB => NDPB.DepartmentID, PB => PB.Id, (NDPB, PB) => new { NDPB, PB })
-                                                    .Where(x => (x.NDPB.UserID == intUserID) && (x.PB.isDeleted == false)).Select(y=>y.PB).ToList();
+                                                    .Where(x => (x.NDPB.UserID == intUserID) && (x.PB.isDeleted == false)).Select(y => y.PB).ToList();
             return lstObj;
         }
 
@@ -435,9 +460,9 @@ namespace CPanel.Commons
         }
 
 
-        
-        
-        
+
+
+
 
         /**
          * Get DropDownList of Departments by User ID
@@ -479,16 +504,16 @@ namespace CPanel.Commons
             catch (Exception ex)
             {
                 return null;
-            }            
+            }
         }
 
 
-        
+
 
         /**
          * Get value from Session
-         */ 
-        public static string getValueFromSession (string strName, HttpSessionState objSession)
+         */
+        public static string getValueFromSession(string strName, HttpSessionState objSession)
         {
             string strResult = (string)objSession[strName];
             objSession[strName] = null;//reset value
@@ -499,13 +524,13 @@ namespace CPanel.Commons
          * Reset Session is NULL
          */
         public static void resetNullForSession(string strName, HttpSessionState objSession)
-        {            
+        {
             objSession[strName] = null;//reset value            
         }
 
         /**
          * Set value from Session
-         */ 
+         */
         public static void setValueToSession(string strName, string strValue, HttpSessionState objSession)
         {
             objSession[strName] = strValue;
@@ -513,14 +538,13 @@ namespace CPanel.Commons
 
         /**
          * Display Message Box
-         */ 
+         */
         public static void displayMessageBox(Page objThis, string strMessage, string strURLToRedirect)
         {
             MainMaster objMasterPage = (MainMaster)objThis.Master;
             objMasterPage.showMessage(strMessage, strURLToRedirect);
         }
 
-        
         /**
         * Telerik:RadtreeView: variable to create TreeView
         * intCap: Begin from 1
@@ -537,7 +561,7 @@ namespace CPanel.Commons
         //        blNumber = true;
         //    }
 
-            
+
         //    List<TreeObject> lstTreeObjects = new List<TreeObject>();
 
         //    var lstObjects = entities.TBL_PHONG_BAN.Where(x => (blNumber && x.IdParent == intID) || (blNumber == false && ((x.IdParent == 0) || (x.IdParent == null)))).ToList();
@@ -587,7 +611,7 @@ namespace CPanel.Commons
         //        blNumber = true;
         //    }
 
-            
+
         //    List<TreeObject> lstTreeObjects = new List<TreeObject>();
 
         //    var lstObjects = entities.TBL_PHONG_BAN.Where(x => (blNumber && x.IdParent == intID) || (blNumber == false && ((x.IdParent == 0) || (x.IdParent == null)))).ToList();
@@ -626,11 +650,11 @@ namespace CPanel.Commons
 
         //    }
         //}
-    
+
     }
 
 
 
-    
+
     /**********END: CLASS ATCL_Commons*************************/
 }

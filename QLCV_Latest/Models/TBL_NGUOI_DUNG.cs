@@ -14,6 +14,7 @@ namespace CPanel.Models
     
     public partial class TBL_NGUOI_DUNG
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TBL_NGUOI_DUNG()
         {
             this.TBL_NGUOI_DUNG_QUYEN = new HashSet<TBL_NGUOI_DUNG_QUYEN>();
@@ -30,6 +31,7 @@ namespace CPanel.Models
         public string Tel { get; set; }
         public string FullName { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBL_NGUOI_DUNG_QUYEN> TBL_NGUOI_DUNG_QUYEN { get; set; }
     }
 }

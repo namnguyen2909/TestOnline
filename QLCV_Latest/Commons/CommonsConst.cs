@@ -34,6 +34,10 @@ namespace CPanel.Commons
         public static string SESSION_MENUS = "SESSION_MENUS";
         public static string SESSION_KHEN_THUONG = "SESSION_KHEN_THUONG";
 
+        public static string SESSION_CHUDEBAITHI = "SESSION_CHUDEBAITHI";
+
+        public static string SESSION_MUCDOBAITHI = "SESSION_MUCDOBAITHI";
+
         public static string SUPPER_ADMIN = "ADMIN";
         public static string CONFIG_EMAIL = "CONFIG_EMAIL";
 
@@ -98,6 +102,15 @@ namespace CPanel.Commons
         public string ID_LANGUAGE = "";
 
 
+    }
+    public class SessionForChuDeBaiThi
+    {
+        public string ID_CHU_DE_BAI_THI = "";
+        public string TEN_CHU_DE_BAI_THI = "";
+    }
+    public class SessionForMucDoBaiThi
+    {
+        public string ID_MUC_DO_BAI_THI = "";
     }
 
     public class CommonFuncs

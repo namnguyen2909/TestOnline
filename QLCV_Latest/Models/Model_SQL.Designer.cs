@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\1_PROJECTS\2020\QuanLyCongViec\SOURCE_CODE\QLCV_Latest\Models\Model_SQL.edmx'. 
+﻿// T4 code generation is enabled for model 'F:\Web\CTV AITS\AITS Projects\aits_test_online\SOURCE_CODE\QLCV_Latest\Models\Model_SQL.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

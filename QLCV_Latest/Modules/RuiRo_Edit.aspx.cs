@@ -92,6 +92,10 @@ namespace CPanel.Modules
                     if (obj.ID_KET_QUA != null)
                         drpKetQuaCV.SelectedValue = obj.ID_KET_QUA.ToString();
 
+                    cbTrachNhiemAITS.Checked = (bool)obj.TT_TRACH_NHIEM_AITS ? true : false;
+                    cbTrachNhiemKH.Checked = (bool)obj.TT_TRACH_NHIEM_KH ? true : false;
+                    cbTrachNhiemDT.Checked = (bool)obj.TT_TRACH_NHIEM_DT ? true : false;
+
                     txtGhiChu.Text = obj.GHI_CHU;
                 }
             }
